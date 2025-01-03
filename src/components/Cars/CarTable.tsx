@@ -44,10 +44,10 @@ const CarTable = () => {
             const cars = await import('../../data/cars.json');
             console.log(cars.default);
             await store.set('cars', cars.default);
-            setCarData(cars);
+            setCarData(cars.default.filter(item => !item.owned));
             return;
        }
-       setCarData(cars)
+       setCarData(cars.filter((item: { owned: any; }) => !item.owned))
     }
 
     if(loading){
@@ -79,7 +79,7 @@ const CarTable = () => {
             carCart = []
         }
         // @ts-ignore
-        carCart.push(carData[id - 1]);
+        carCart.push(carData.filter(item => item.id === id)[0]);
         await store.set("carCart", carCart);
         setCart(carCart);
         setRender(true);

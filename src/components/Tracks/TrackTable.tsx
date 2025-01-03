@@ -11,6 +11,7 @@ const TrackTable = () => {
     useEffect(() => {
             if(trackData.length > 20){
                 setLoading(false);
+                getCart().then()
             }
             else {
                 getTracks().then();
@@ -31,13 +32,13 @@ const TrackTable = () => {
         const tracks = await store.get<any>('tracks');
         console.log(tracks)
         if (!tracks) {
-            const tracks = await import('../../data/tracks.json');
+            let tracks = await import('../../data/tracks.json');
             console.log(tracks.default);
             await store.set('tracks', tracks.default);
-            setTrackData(tracks);
+            setTrackData(tracks.default.filter(item => !item.owned));
             return;
         }
-        setTrackData(tracks)
+        setTrackData(tracks.filter((item: { owned: boolean; }) => !item.owned))
     }
 
     useEffect(() => {
@@ -68,13 +69,14 @@ const TrackTable = () => {
     }
 
     const addToCart = async (id:any) => {
+        console.log(id);
         const store = await load('store.json', { autoSave: true });
         let trackCart = await store.get("trackCart");
         if(!trackCart){
             trackCart = []
         }
         // @ts-ignore
-        trackCart.push(trackData[id - 1]);
+        trackCart.push(trackData.filter(item => item.id === id)[0]);
         setCart(trackCart);
         await store.set("trackCart", trackCart);
         setRender(true);
