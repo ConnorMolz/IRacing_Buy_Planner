@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar.tsx";
 const Home = () =>{
     return(
         <div>
-            <Navbar />
+            <Navbar/>
             <div className="py-2.5"></div>
             <div className="justify-center flex py-2.5">
                 <Link to={"/cars"} className="btn btn-primary h-20 w-4/5">Cars</Link>
@@ -15,7 +15,9 @@ const Home = () =>{
             <div className="justify-center flex py-2.5">
                 <Link to={"/cart"} className="btn btn-primary h-20 w-4/5">Cart</Link>
             </div>
-
+            <div className="justify-center flex py-2.5">
+                <Link to={"/my-content"} className="btn btn-primary h-20 w-4/5">My Content</Link>
+            </div>
 
 
         </div>

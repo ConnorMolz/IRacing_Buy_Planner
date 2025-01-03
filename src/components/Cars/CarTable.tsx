@@ -92,7 +92,7 @@ const CarTable = () => {
             <thead>
             <tr>
                 <th></th>
-                <th>Cars Name</th>
+                <th>Car Name</th>
                 <th>Cost</th>
                 <th>Owned</th>
             </tr>

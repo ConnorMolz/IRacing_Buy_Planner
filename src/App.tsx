@@ -3,6 +3,7 @@ import Home from "./pages/Home.tsx";
 import Tracks from "./pages/Tracks.tsx";
 import Cars from "./pages/Cars.tsx";
 import Cart from "./pages/Cart.tsx";
+import MyContent from "./pages/My-Content.tsx";
 
 
 const App = ()=> {
@@ -24,6 +25,10 @@ const App = ()=> {
         {
             path:"/Cart",
             element: <Cart />
+        },
+        {
+            path:"/My-Content",
+            element: <MyContent />
         }
 
     ]);
