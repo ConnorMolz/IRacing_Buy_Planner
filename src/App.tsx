@@ -4,6 +4,7 @@ import Tracks from "./pages/Tracks.tsx";
 import Cars from "./pages/Cars.tsx";
 import Cart from "./pages/Cart.tsx";
 import MyContent from "./pages/My-Content.tsx";
+import Options from "./pages/Options.tsx";
 
 
 const App = ()=> {
@@ -29,6 +30,10 @@ const App = ()=> {
         {
             path:"/My-Content",
             element: <MyContent />
+        },
+        {
+            path:"/Options",
+            element: <Options />
         }
 
     ]);
