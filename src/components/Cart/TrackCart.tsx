@@ -36,46 +36,83 @@ const TrackCart = () =>{
         return price.toFixed(2);
     }
 
-    if(loading){
-        return <p>loading...</p>
+    const removeFromCart = async (id:any) => {
+        setCart(cart.filter(item => item.id !== id));
+        const store = await load("store.json", {autoSave: true});
+        await store.set("trackCart", cart.filter(item => item.id !== id));
     }
-    return(
+
+    if(loading){
+        return (
+            <div>
+                <div className="py-8 text-2xl underline underline-offset-1">Tracks</div>
+                <div className="overflow-x-auto">
+                    <table className="table">
+                        {/* head */}
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th>Track Name</th>
+                            <th>Variants</th>
+                            <th>Cost</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td></td>
+                            <td><p>Tracks in Cart: {cart.length}</p></td>
+                            <td></td>
+                            <td><p>Price without VAT: {calcPrice()}$</p></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div className="divider"></div>
+            </div>
+        )
+    }
+    return (
         <div>
             <div className="py-8 text-2xl underline underline-offset-1">Tracks</div>
             <div className="overflow-x-auto">
                 <table className="table">
                     {/* head */}
                     <thead>
-                    <tr>
-                        <th></th>
-                        <th>Track Name</th>
-                        <th>Variants</th>
-                        <th>Cost</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    {
-                        cart.map((track: any) => (
-                            <tr key={track.id}>
-                                <td></td>
-                                <td>{track.name}</td>
-                                <td>{track.variants}</td>
-                                <td>{track.cost}</td>
-                            </tr>
-                        ))
-                    }
-                    <tr>
-                        <td></td>
-                        <td><p>Tracks in Cart: {cart.length}</p></td>
-                        <td></td>
-                        <td><p>Price without VAT: {calcPrice()}$</p></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div className="divider"></div>
-        </div>
-    );
-}
+                                    <tr>
+                                        <th></th>
+                                        <th>Track Name</th>
+                                        <th>Variants</th>
+                                        <th>Cost</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    {
+                                        cart.map((track: any) => (
+                                            <tr key={track.id}>
+                                                <td>
+                                                    <button className="btn btn-error"
+                                                            onClick={() => removeFromCart(track.id)}>
+                                                        Remove
+                                                    </button>
+                                                </td>
+                                                <td>{track.name}</td>
+                                                <td>{track.variants}</td>
+                                                <td>{track.cost}</td>
+                                            </tr>
+                                        ))
+                                    }
+                                    <tr>
+                                        <td></td>
+                                        <td><p>Tracks in Cart: {cart.length}</p></td>
+                                        <td></td>
+                                        <td><p>Price without VAT: {calcPrice()}$</p></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div className="divider"></div>
+                        </div>
+                        );
+                        }
 
-export default TrackCart;
+                        export default TrackCart;

@@ -36,10 +36,40 @@ const CarCart = () =>{
         return price.toFixed(2);
     }
 
-    if(loading){
-        return <p>loading...</p>
+    const removeFromCart = async (id:any) => {
+        setCart(cart.filter(item => item.id !== id));
+        const store = await load("store.json", {autoSave: true});
+        await store.set("carCart", cart.filter(item => item.id !== id));
     }
-    return(
+
+    if(loading){
+        return (
+            <div>
+                <div className="py-8 text-2xl underline underline-offset-1">Cars</div>
+                <div className="overflow-x-auto">
+                    <table className="table">
+                        {/* head */}
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th>Cars Name</th>
+                            <th>Cost</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td></td>
+                            <td><p>Cars in Cart: {cart.length}</p></td>
+                            <td><p>Price without VAT: {calcPrice()}$</p></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div className="divider"></div>
+            </div>
+        )
+    }
+    return (
         <div>
             <div className="py-8 text-2xl underline underline-offset-1">Cars</div>
             <div className="overflow-x-auto">
@@ -56,7 +86,11 @@ const CarCart = () =>{
                     {
                         cart.map((car: any) => (
                             <tr key={car.id}>
-                                <td></td>
+                                <td>
+                                    <button className="btn btn-error" onClick={() => removeFromCart(car.id)}>
+                                        Remove
+                                    </button>
+                                </td>
                                 <td>{car.name}</td>
                                 <td>{car.cost}$</td>
                             </tr>
