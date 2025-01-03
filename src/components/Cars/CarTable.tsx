@@ -5,6 +5,8 @@ const CarTable = () => {
 
     const [loading, setLoading] = useState(true);
     const [carData, setCarData] = useState<any>([]);
+    const [render, setRender] = useState(false)
+    const [cart, setCart] = useState<any>([]);
 
     useEffect(() => {
             if(carData.length > 20){
@@ -12,17 +14,29 @@ const CarTable = () => {
             }
             else {
                 getCars().then();
+                getCart().then();
             }
         },[carData]
     );
 
     useEffect(() => {
         getCars().then();
+        getCart().then();
     }, []
     );
 
+    useEffect(() => {
+        setRender(false)
+    },[render]);
+
+    const getCart = async () =>{
+        const store = await load('store.json', { autoSave: true });
+        let carCart = await store.get("carCart");
+        setCart(carCart);
+    }
+
     const getCars = async () =>{
-        const store = await load('store.json', { autoSave: false });
+        const store = await load('store.json', { autoSave: true });
 
         const cars = await store.get<any>('cars');
         console.log(cars)
@@ -40,6 +54,35 @@ const CarTable = () => {
         return (
             <div>Loading...</div>
         )
+    }
+
+    const checkInCart = (id:any) => {
+        try{
+            // @ts-ignore
+            for(let i = 0; i < cart.length; i++){
+                // @ts-ignore
+                if(cart[i].id == id){
+                    return <p className="text-xl">In Cart</p>
+                }
+            }
+        }
+        catch (e){
+            console.error(e);
+        }
+        return <button onClick={() => addToCart(id)} className="btn btn-primary">Add to Cart</button>
+    }
+
+    const addToCart = async (id:any) => {
+        const store = await load('store.json', { autoSave: true });
+        let carCart = await store.get("carCart");
+        if(!carCart){
+            carCart = []
+        }
+        // @ts-ignore
+        carCart.push(carData[id - 1]);
+        await store.set("carCart", carCart);
+        setCart(carCart);
+        setRender(true);
     }
 
     return (
@@ -61,7 +104,8 @@ const CarTable = () => {
                         <td></td>
                         <td>{car.name}</td>
                         <td>{car.cost}</td>
-                        <td>{car.owned ? <p className="text-xl accent-green-500">Owned</p> : <button className="btn btn-primary">Add to Cart</button>}</td>
+                        <td>{car.owned ?
+                            <p className="text-xl accent-green-500">Owned</p> : checkInCart(car.id)}</td>
                     </tr>
                 ))
             }

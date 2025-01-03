@@ -5,24 +5,28 @@ const TrackTable = () => {
 
     const [loading, setLoading] = useState(true);
     const [trackData, setTrackData] = useState<any>([]);
+    const [render, setRender] = useState(false)
+    const [cart, setCart] = useState<any>([]);
 
     useEffect(() => {
             if(trackData.length > 20){
                 setLoading(false);
             }
             else {
-                getCars().then();
+                getTracks().then();
+                getCart().then();
             }
         },[trackData]
     );
 
     useEffect(() => {
-            getCars().then();
+            getTracks().then();
+            getCart().then();
         }, []
     );
 
-    const getCars = async () =>{
-        const store = await load('store.json', { autoSave: false });
+    const getTracks = async () =>{
+        const store = await load('store.json', { autoSave: true });
 
         const tracks = await store.get<any>('tracks');
         console.log(tracks)
@@ -34,6 +38,46 @@ const TrackTable = () => {
             return;
         }
         setTrackData(tracks)
+    }
+
+    useEffect(() => {
+        setRender(false)
+        if(render){}
+    });
+
+    const getCart = async () =>{
+        const store = await load('store.json', { autoSave: true });
+        let carCart = await store.get("trackCart");
+        setCart(carCart);
+    }
+
+    const checkInCart = (id:any) => {
+        try{
+            // @ts-ignore
+            for(let i = 0; i < cart.length; i++){
+                // @ts-ignore
+                if(cart[i].id == id){
+                    return <p className="text-xl">In Cart</p>
+                }
+            }
+        }
+        catch (e){
+            console.error(e);
+        }
+        return <button onClick={() => addToCart(id)} className="btn btn-primary">Add to Cart</button>
+    }
+
+    const addToCart = async (id:any) => {
+        const store = await load('store.json', { autoSave: true });
+        let trackCart = await store.get("trackCart");
+        if(!trackCart){
+            trackCart = []
+        }
+        // @ts-ignore
+        trackCart.push(trackData[id - 1]);
+        setCart(trackCart);
+        await store.set("trackCart", trackCart);
+        setRender(true);
     }
 
     if(loading){
@@ -63,7 +107,9 @@ const TrackTable = () => {
                             <td>{track.name}</td>
                             <td>{track.variants}</td>
                             <td>{track.cost}</td>
-                            <td>{track.owned ? <p className="text-xl accent-green-500">Owned</p> : <button className="btn btn-primary">Add to Cart</button>}</td>
+                            <td>{track.owned ?
+                                <p className="text-xl accent-green-500">Owned</p> : checkInCart(track.id)}
+                            </td>
                         </tr>
                     ))
                 }
