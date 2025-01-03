@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+// @ts-ignore
 import tailwindcss from '@tailwindcss/vite'
 
 // @ts-expect-error process is a nodejs global
