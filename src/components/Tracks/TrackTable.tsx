@@ -106,7 +106,7 @@ const TrackTable = () => {
                             <td></td>
                             <td>{track.name}</td>
                             <td>{track.variants}</td>
-                            <td>{track.cost}</td>
+                            <td>{track.cost}$</td>
                             <td>{track.owned ?
                                 <p className="text-xl accent-green-500">Owned</p> : checkInCart(track.id)}
                             </td>

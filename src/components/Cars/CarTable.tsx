@@ -103,7 +103,7 @@ const CarTable = () => {
                     <tr key={car.id}>
                         <td></td>
                         <td>{car.name}</td>
-                        <td>{car.cost}</td>
+                        <td>{car.cost}$</td>
                         <td>{car.owned ?
                             <p className="text-xl accent-green-500">Owned</p> : checkInCart(car.id)}</td>
                     </tr>

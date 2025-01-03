@@ -97,7 +97,7 @@ const TrackCart = () =>{
                                                 </td>
                                                 <td>{track.name}</td>
                                                 <td>{track.variants}</td>
-                                                <td>{track.cost}</td>
+                                                <td>{track.cost}$</td>
                                             </tr>
                                         ))
                                     }
