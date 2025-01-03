@@ -1,0 +1,1024 @@
+[
+  {
+    "id": 1,
+    "name": "ARCA Menards Chevy/Gen 4 Cup",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 2,
+    "name": "Cadillac CTS-V Racecar",
+    "cost": 0,
+    "free": true,
+    "owned": true
+  },
+  {
+    "id": 3,
+    "name": "Dirt Late Model",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 4,
+    "name": "Legends Ford 34 Coupe",
+    "cost": 0,
+    "free": true,
+    "owned": true
+  },
+  {
+    "id": 5,
+    "name": "Dirt Midget",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 6,
+    "name": "Dirt Sprint Car",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 7,
+    "name": "Dirt Sprint Car - Non-Winged",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 8,
+    "name": "Dirt Street Stock",
+    "cost": 0,
+    "free": true,
+    "owned": true
+  },
+  {
+    "id": 9,
+    "name": "Dirt UMP Modified",
+    "cost": 0,
+    "free": true,
+    "owned": true
+  },
+  {
+    "id": 10,
+    "name": "Global Mazda MX-5 Cup",
+    "cost": 0,
+    "free": true,
+    "owned": true
+  },
+  {
+    "id": 11,
+    "name": "Kia Optima",
+    "cost": 0,
+    "free": true,
+    "owned": true
+  },
+  {
+    "id": 12,
+    "name": "Lucas Oil Off Road Pro 2 Lite Truck",
+    "cost": 0,
+    "free": true,
+    "owned": true
+  },
+  {
+    "id": 13,
+    "name": "Pontiac Solstice",
+    "cost": 0,
+    "free": true,
+    "owned": true
+  },
+  {
+    "id": 14,
+    "name": "Radical SR8",
+    "cost": 0,
+    "free": true,
+    "owned": true
+  },
+  {
+    "id": 15,
+    "name": "SCCA Spec Racer Ford",
+    "cost": 0,
+    "free": true,
+    "owned": true
+  },
+  {
+    "id": 16,
+    "name": "Street Stock - Panther C1",
+    "cost": 0,
+    "free": true,
+    "owned": true
+  },
+  {
+    "id": 17,
+    "name": "VW Beetle",
+    "cost": 0,
+    "free": true,
+    "owned": true
+  },
+  {
+    "id": 18,
+    "name": "VW Jetta TDI Cup",
+    "cost": 0,
+    "free": true,
+    "owned": true
+  },
+  {
+    "id": 19,
+    "name": "[Legacy] Dallara DW12",
+    "cost": 0,
+    "free": true,
+    "owned": true
+  },
+  {
+    "id": 20,
+    "name": "[Legacy] Dallara IR-05",
+    "cost": 2.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 21,
+    "name": "[Legacy] Mazda MX-5 Cup & Roadster - 2010",
+    "cost": 2.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 22,
+    "name": "[Legacy] NASCAR Cup Chevrolet Impala COT - 2009",
+    "cost": 2.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 23,
+    "name": "[Legacy] NASCAR Cup Chevrolet SS - 2013",
+    "cost": 2.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 24,
+    "name": "[Legacy] NASCAR Cup Ford Fusion - 2016",
+    "cost": 2.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 25,
+    "name": "[Legacy] NASCAR Nationwide Chevrolet Impala - 2012",
+    "cost": 2.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 26,
+    "name": "[Legacy] NASCAR Truck Chevrolet Silverado - 2008",
+    "cost": 0,
+    "free": true,
+    "owned": true
+  },
+  {
+    "id": 27,
+    "name": "[Legacy] NASCAR Xfinity Chevrolet Camaro - 2014",
+    "cost": 2.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 28,
+    "name": "[Legacy] NASCAR Xfinity Ford Mustang - 2016",
+    "cost": 2.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 29,
+    "name": "[Legacy] NASCAR Xfinity Toyota Camry - 2015",
+    "cost": 2.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 30,
+    "name": "[Legacy] Pro Mazda",
+    "cost": 2.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 31,
+    "name": "[Legacy] Riley MkXX Daytona Prototype - 2008",
+    "cost": 2.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 32,
+    "name": "[Legacy] V8 Supercar Ford FG Falcon - 2014",
+    "cost": 2.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 33,
+    "name": "[Legacy] V8 Supercar Ford Falcon - 2009",
+    "cost": 2.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 34,
+    "name": "[Legacy] V8 Supercar Holden VF Commodore - 2014",
+    "cost": 2.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 35,
+    "name": "Aston Martin DBR9 GT1",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 36,
+    "name": "Audi 90 GTO",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 37,
+    "name": "Audi R18",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 38,
+    "name": "[Legacy] Audi R8 LMS",
+    "cost": 2.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 39,
+    "name": "Audi RS 3 LMS",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 40,
+    "name": "BMW M4 F82 GT4 - 2018",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 41,
+    "name": "BMW M8 GTE",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 42,
+    "name": "[Legacy] BMW Z4 GT3",
+    "cost": 2.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 43,
+    "name": "Chevrolet Corvette C6.R GT1",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 44,
+    "name": "Chevrolet Corvette C7 Daytona Prototype",
+    "cost": 2.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 45,
+    "name": "Chevrolet Corvette C8.R GTE",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 46,
+    "name": "Late Model Stock",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 47,
+    "name": "Dallara F3",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 48,
+    "name": "Dallara IR18",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 49,
+    "name": "Dallara P217",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 50,
+    "name": "[Legacy] Ferrari 488 GT3",
+    "cost": 2.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 51,
+    "name": "Ferrari 488 GTE",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 52,
+    "name": "Ford Fiesta RS WRC",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 53,
+    "name": "Ford GT GT2/GT3",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 54,
+    "name": "Ford GTE",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 55,
+    "name": "Ford Mustang FR500S",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 56,
+    "name": "Formula Renault 2.0",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 57,
+    "name": "Formula Renault 3.5",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 58,
+    "name": "HPD ARX-01c",
+    "cost": 2.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 59,
+    "name": "Indy Pro 2000 PM-18",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 60,
+    "name": "Lotus 49",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 61,
+    "name": "Lotus 79",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 62,
+    "name": "Lucas Oil Off Road Pro Trucks",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 63,
+    "name": "McLaren MP4-12C GT3",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 64,
+    "name": "McLaren MP4-30",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 65,
+    "name": "[Legacy] Mercedes AMG GT3",
+    "cost": 2.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 66,
+    "name": "NASCAR Whelen Tour Modified",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 67,
+    "name": "NASCAR Whelen Tour Modified - SK",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 68,
+    "name": "NASCAR Legends Chevrolet Monte Carlo - 1987",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 69,
+    "name": "NASCAR Cup Series Chevrolet Camaro ZL1",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 70,
+    "name": "NASCAR Cup Series Ford Mustang",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 71,
+    "name": "NASCAR Cup Series Toyota Camry",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 72,
+    "name": "NASCAR Legends Ford Thunderbird - 1987",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 73,
+    "name": "NASCAR Truck Chevrolet Silverado",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 74,
+    "name": "NASCAR Truck Ford F150",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 75,
+    "name": "NASCAR Truck Toyota Tundra TRD Pro",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 76,
+    "name": "NASCAR XFINITY Chevrolet Camaro",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 77,
+    "name": "NASCAR XFINITY Ford Mustang",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 78,
+    "name": "NASCAR XFINITY Toyota Supra",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 79,
+    "name": "Nissan GTP ZX-T",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 80,
+    "name": "Porsche 718 Cayman GT4 Clubsport MR",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 81,
+    "name": "[Legacy] Porsche 911 GT3 Cup (991)",
+    "cost": 2.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 82,
+    "name": "Porsche 911 RSR",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 83,
+    "name": "Porsche 919",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 84,
+    "name": "Ruf RT 12R",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 85,
+    "name": "Silver Crown",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 86,
+    "name": "Skip Barber Formula 2000",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 87,
+    "name": "Sprint Car",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 88,
+    "name": "Subaru WRX STI",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 89,
+    "name": "Super Late Model",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 90,
+    "name": "[Legacy] Supercars Ford Mustang GT",
+    "cost": 2.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 91,
+    "name": "[Legacy] Supercars Holden ZB Commodore",
+    "cost": 2.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 92,
+    "name": "USF 2000",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 93,
+    "name": "Williams FW31",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 94,
+    "name": "Dirt Big Block Modified",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 95,
+    "name": "Dallara iR-01",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 96,
+    "name": "Lamborghini Huracan GT3 EVO",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 97,
+    "name": "BMW M4 GT3",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 98,
+    "name": "McLaren 570S GT4",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 99,
+    "name": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 100,
+    "name": "NASCAR Cup Series Next Gen Ford Mustang",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 101,
+    "name": "NASCAR Cup Series Next Gen Toyota Camry",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 102,
+    "name": "Formula Vee",
+    "cost": 0,
+    "free": true,
+    "owned": true
+  },
+  {
+    "id": 103,
+    "name": "[Legacy] Porsche 911 GT3 R",
+    "cost": 2.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 104,
+    "name": "VW Beetle Lite",
+    "cost": 0,
+    "free": true,
+    "owned": true
+  },
+  {
+    "id": 105,
+    "name": "Ferrari 296 GT3",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 106,
+    "name": "Porsche 911 GT3 Cup (992)",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 107,
+    "name": "Honda Civic Type R TCR",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 108,
+    "name": "Hyundai Elantra N TCR",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 109,
+    "name": "Mercedes-AMG F1 W12 E Performance",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 110,
+    "name": "Aston Martin Vantage GT4",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 111,
+    "name": "Hyundai Veloster N TCR",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 112,
+    "name": "FIA F4",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 113,
+    "name": "NASCAR Legends Buick LeSabre - 1987",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 114,
+    "name": "Stock Car Pro Series Toyota Corolla",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 115,
+    "name": "Stock Car Pro Series Chevrolet Cruze",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 116,
+    "name": "Mercedes-AMG GT3 2020",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 117,
+    "name": "Mercedes-AMG GT4",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 118,
+    "name": "Radical SR10",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 119,
+    "name": "Porsche Mission R",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 120,
+    "name": "BMW M Hybrid V8",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 121,
+    "name": "Mercedes-AMG W13 E Performance",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 122,
+    "name": "Toyota GR86",
+    "cost": 0,
+    "free": true,
+    "owned": true
+  },
+  {
+    "id": 123,
+    "name": "Ray FF1600",
+    "cost": 0,
+    "free": true,
+    "owned": true
+  },
+  {
+    "id": 124,
+    "name": "Renault Clio",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 125,
+    "name": "Cadillac V-Series.R GTP",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 126,
+    "name": "Ligier JS P320",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 127,
+    "name": "Porsche 911 GT3 R (992)",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 128,
+    "name": "Acura ARX-06 GTP",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 129,
+    "name": "NASCAR Legends Pontiac Grand Prix - 1987",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 130,
+    "name": "Porsche 963 GTP",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 131,
+    "name": "Super Formula SF23",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 132,
+    "name": "Audi R8 LMS EVO II GT3",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 133,
+    "name": "Dirt Micro Sprint Car",
+    "cost": 0,
+    "free": true,
+    "owned": true
+  },
+  {
+    "id": 134,
+    "name": "SRX",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 135,
+    "name": "Super Formula Lights",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 136,
+    "name": "Chevrolet Corvette Z06 GT3.R",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 137,
+    "name": "Ford Mustang GT3",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 138,
+    "name": "Street Stock - Casino M2/Eagle T3",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 139,
+    "name": "BMW M4 G82 GT4",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 140,
+    "name": "Mini Stock",
+    "cost": 0,
+    "free": true,
+    "owned": true
+  },
+  {
+    "id": 141,
+    "name": "McLaren 720S GT3 EVO",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 142,
+    "name": "Supercars Ford Mustang Gen 3",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 143,
+    "name": "Supercars Chevrolet Camaro Gen 3",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 144,
+    "name": "Ferrari 499P",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 145,
+    "name": "Acura NSX GT3 EVO 22",
+    "cost": 11.95,
+    "free": false,
+    "owned": false
+  },
+  {
+    "id": 146,
+    "name": "BMW M2 CS Racing",
+    "cost": 0,
+    "free": true,
+    "owned": true
+  }
+]
