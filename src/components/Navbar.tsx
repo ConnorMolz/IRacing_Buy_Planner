@@ -1,8 +1,10 @@
+import {Link} from "react-router";
+
 const Navbar = () =>{
     return(
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-200">
         <div className="flex-1">
-        <a className="btn btn-ghost text-xl">IRacing Buy Planner</a>
+        <Link to="/" className="btn btn-ghost text-xl">IRacing Buy Planner</Link>
             </div>
             <div className="flex-none">
     <button className="btn btn-square btn-ghost">

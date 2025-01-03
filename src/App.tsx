@@ -3,6 +3,7 @@ import Home from "./pages/Home.tsx";
 import Tracks from "./pages/Tracks.tsx";
 import Cars from "./pages/Cars.tsx";
 
+
 const App = ()=> {
     const router = createBrowserRouter([
         // All paths which are used in the app
@@ -11,7 +12,6 @@ const App = ()=> {
             path: "/",
             element: <Home />
         },
-        // Main pages prefix /Home/<page>
         {
             path:"/Tracks",
             element: <Tracks />,
@@ -21,11 +21,13 @@ const App = ()=> {
             element: <Cars />
         },
 
-    ])
+    ]);
 
     return (
-        <RouterProvider router={router} />
-    )
+        <div>
+            <RouterProvider router={router} />
+        </div>
+    );
 }
 
 export default App;
