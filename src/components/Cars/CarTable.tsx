@@ -40,13 +40,22 @@ const CarTable = () => {
 
         const cars = await store.get<any>('cars');
         console.log(cars)
-       if (!cars) {
+        try {
+            if (cars.length < 20) {
+                const cars = await import('../../data/cars.json');
+                console.log(cars.default);
+                await store.set('cars', cars.default);
+                setCarData(cars.default.filter(item => !item.owned));
+                return;
+            }
+        }
+        catch (e){
             const cars = await import('../../data/cars.json');
             console.log(cars.default);
             await store.set('cars', cars.default);
             setCarData(cars.default.filter(item => !item.owned));
             return;
-       }
+        }
        setCarData(cars.filter((item: { owned: any; }) => !item.owned))
     }
 

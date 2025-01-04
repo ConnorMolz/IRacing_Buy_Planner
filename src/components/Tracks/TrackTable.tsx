@@ -31,7 +31,16 @@ const TrackTable = () => {
 
         const tracks = await store.get<any>('tracks');
         console.log(tracks)
-        if (!tracks) {
+        try {
+            if (tracks.length < 10) {
+                let tracks = await import('../../data/tracks.json');
+                console.log(tracks.default);
+                await store.set('tracks', tracks.default);
+                setTrackData(tracks.default.filter(item => !item.owned));
+                return;
+            }
+        }
+        catch (e) {
             let tracks = await import('../../data/tracks.json');
             console.log(tracks.default);
             await store.set('tracks', tracks.default);
