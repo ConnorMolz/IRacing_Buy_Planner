@@ -103,7 +103,7 @@ const CartControl = () => {
     return(
         <div>
             <div className="flex w-full flex-col border-opacity-50">
-                <div className="card bg-base-300 rounded-box grid h-30 place-items-center">
+                <div className="card bg-base-200 rounded-box grid h-30 place-items-center">
                     Total Price without VAT: {calcPrice()}$ (With Discount if possible)
                     <button onClick={() => buy()} className="btn btn-primary">Buy Cart</button>
                 </div>
