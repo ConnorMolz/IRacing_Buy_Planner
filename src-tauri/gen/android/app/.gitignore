@@ -1,4 +1,4 @@
-/src/main/java/com/iracing_buy_planner/app/generated
+/src/main/java/com/iracingbuyplanner/app/generated
 /src/main/jniLibs/**/*.so
 /src/main/assets/tauri.conf.json
 /tauri.build.gradle.kts
