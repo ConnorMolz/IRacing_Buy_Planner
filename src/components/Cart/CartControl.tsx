@@ -96,6 +96,8 @@ const CartControl = () => {
         await store.set("tracks", trackCartFunc);
         await store.set("carCart", []);
         await store.set("trackCart", []);
+
+        window.location.reload();
     }
 
     return(
