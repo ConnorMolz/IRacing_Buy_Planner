@@ -1,3 +1,3 @@
-package com.iracing_buy_planner.app
+package com.iracingbuyplanner.app
 
 class MainActivity : TauriActivity()

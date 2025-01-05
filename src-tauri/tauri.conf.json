@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "iracing_buy_planner",
+  "productName": "IRacing_Buy_Planner",
   "version": "0.1.0",
-  "identifier": "com.iracing_buy_planner.app",
+  "identifier": "com.iracingbuyplanner.app",
   "build": {
     "beforeDevCommand": "npm run dev",
     "devUrl": "http://localhost:1420",
@@ -12,7 +12,7 @@
   "app": {
     "windows": [
       {
-        "title": "iracing_buy_planner",
+        "title": "iRacing Buy Planner",
         "width": 800,
         "height": 600
       }
