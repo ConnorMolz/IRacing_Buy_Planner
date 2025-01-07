@@ -1,6 +1,10 @@
-const MyCars = (cars: any[]) => {
-    console.log(cars.cars);
-    if (cars.length == 0) {
+interface cars {
+    carList: any[],
+}
+
+const MyCars = (cars: cars) => {
+    console.log(cars.carList);
+    if (cars.carList.length == 0) {
         return (
             <div></div>
         )
@@ -17,13 +21,13 @@ const MyCars = (cars: any[]) => {
                 </thead>
                 <tbody>
                 {
-                    cars.cars.map((car: any) => (
+                    cars.carList.map((car: any) => (
                         <tr key={car.id}>
-                            <td></td>
                             <td>{car.name}</td>
                         </tr>
                     ))
                 }
+                <tr></tr>
                 </tbody>
             </table>
         </div>

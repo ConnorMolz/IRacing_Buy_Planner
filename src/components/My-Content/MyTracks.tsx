@@ -1,4 +1,8 @@
-const MyTracks = (tracks:any[]) => {
+interface tracks {
+    trackList: any[]
+}
+
+const MyTracks = (tracks:tracks) => {
     return (
         <div className="overflow-x-auto">
             <table className="table">
@@ -12,7 +16,7 @@ const MyTracks = (tracks:any[]) => {
                 </thead>
                 <tbody>
                 {
-                    tracks.tracks.map((track: any) => (
+                    tracks.trackList.map((track: any) => (
                         <tr key={track.id}>
                             <td></td>
                             <td>{track.name}</td>
@@ -20,6 +24,10 @@ const MyTracks = (tracks:any[]) => {
                         </tr>
                     ))
                 }
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
                 </tbody>
             </table>
         </div>

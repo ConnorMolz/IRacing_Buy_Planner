@@ -5,9 +5,11 @@ import MyCars from "../components/My-Content/MyCars.tsx";
 import MyTracks from "../components/My-Content/MyTracks.tsx";
 
 const MyContent = () =>{
-    const [carData, setCarData] = useState<any>([]);
+    const [freeCarData, setFreeCarData] = useState<any>([]);
+    const [paidCarData, setPaidCarData] = useState<any>([])
     const [render, setRender] = useState(false);
-    const [trackData, setTrackData] = useState<any>([]);
+    const [freeTrackData, setFreeTrackData] = useState<any>([]);
+    const [paidTrackData, setPaidTrackData] = useState<any>([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -28,13 +30,21 @@ const MyContent = () =>{
 
         let cars = await store.get<any>('cars');
         console.log(cars)
-        cars = cars.filter((item: { owned: boolean; }) => item.owned)
+        const freeCars = cars.filter((item: { owned: boolean; free:boolean}) => item.owned && item.free)
             .sort(function(a: { name: string; }, b: { name: string; }) {
                 const textA = a.name.toUpperCase();
                 const textB = b.name.toUpperCase();
                 return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
             });
-        setCarData(cars)
+        const paidCars = cars.filter((item: { owned: boolean; free:boolean}) => item.owned && !item.free)
+            .sort(function(a: { name: string; }, b: { name: string; }) {
+                const textA = a.name.toUpperCase();
+                const textB = b.name.toUpperCase();
+                return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+            });
+        setFreeCarData(freeCars);
+        setPaidCarData(paidCars);
+
     }
 
     const getTracks = async () =>{
@@ -42,13 +52,20 @@ const MyContent = () =>{
 
         let tracks = await store.get<any>('tracks');
         console.log(tracks)
-        tracks = tracks.filter((item: {owned: boolean; }) => item.owned)
+        const freeTracks = tracks.filter((item: {owned: boolean; free:boolean }) => item.owned && item.free)
             .sort(function(a: { name: string; }, b: { name: string; }) {
                 const textA = a.name.toUpperCase();
                 const textB = b.name.toUpperCase();
                 return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
             });
-        setTrackData(tracks)
+        const paidTracks = tracks.filter((item: {owned: boolean; free:boolean }) => item.owned && !item.free)
+            .sort(function(a: { name: string; }, b: { name: string; }) {
+                const textA = a.name.toUpperCase();
+                const textB = b.name.toUpperCase();
+                return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+            });
+        setFreeTrackData(freeTracks);
+        setPaidTrackData(paidTracks);
     }
 
     if(loading){
@@ -58,11 +75,19 @@ const MyContent = () =>{
 
     return (
         <div>
-            <Navbar />
+            <Navbar/>
+            <div className="py-4 divider divider-start text-3xl underline underline-offset-1">Your Paid Content</div>
             <div className="py-8 text-2xl underline underline-offset-1">Cars</div>
-            <MyCars cars={carData}/>
+            <MyCars carList={paidCarData}/>
             <div className="py-8 text-2xl underline underline-offset-1">Tracks</div>
-            <MyTracks tracks={trackData}/>
+            <MyTracks trackList={paidTrackData}/>
+            <div className="flex w-full flex-col">
+                <div className="divider divider-start py-12 text-3xl underline underline-offset-1">Free Content</div>
+            </div>
+            <div className="py-8 text-2xl underline underline-offset-1">Cars</div>
+            <MyCars carList={freeCarData}/>
+            <div className="py-8 text-2xl underline underline-offset-1">Tracks</div>
+            <MyTracks trackList={freeTrackData}/>
         </div>
     );
 }
