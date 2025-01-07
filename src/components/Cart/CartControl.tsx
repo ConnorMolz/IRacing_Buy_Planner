@@ -85,11 +85,25 @@ const CartControl = () => {
         let trackCartFunc = await store.get("tracks");
         for(let i = 0; i < carCart.length; i++){
             // @ts-ignore
-            carCartFunc[carCart[i].id].owned = true;
+            for(let j = 0; j < carCartFunc.length; j++){
+                // @ts-ignore
+                if(carCartFunc[j].id == carCart[i].id){
+                    // @ts-ignore
+                    carCartFunc[j].owned = true;
+                    break;
+                }
+            }
         }
         for(let i = 0; i < trackCart.length; i++){
             // @ts-ignore
-            trackCartFunc[trackCart[i].id].owned = true;
+            for(let j = 0; j < trackCartFunc.length; j++){
+                // @ts-ignore
+                if(trackCartFunc[j].id == trackCart[i].id){
+                    // @ts-ignore
+                    trackCartFunc[j].owned = true;
+                    break;
+                }
+            }
         }
 
         await store.set("cars", carCartFunc);
