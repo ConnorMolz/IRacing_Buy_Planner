@@ -45,7 +45,14 @@ const CarTable = () => {
                 const cars = await import('../../data/cars.json');
                 console.log(cars.default);
                 await store.set('cars', cars.default);
-                setCarData(cars.default.filter(item => !item.owned));
+                setCarData(
+                    cars.default.filter(item => !item.owned)
+                        .sort(function(a, b) {
+                            const textA = a.name.toUpperCase();
+                            const textB = b.name.toUpperCase();
+                            return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+                        })
+                );
                 return;
             }
         }
@@ -53,10 +60,24 @@ const CarTable = () => {
             const cars = await import('../../data/cars.json');
             console.log(cars.default);
             await store.set('cars', cars.default);
-            setCarData(cars.default.filter(item => !item.owned));
+            setCarData(
+                cars.default.filter(item => !item.owned)
+                    .sort(function(a, b) {
+                        const textA = a.name.toUpperCase();
+                        const textB = b.name.toUpperCase();
+                        return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+                    })
+            );
             return;
         }
-       setCarData(cars.filter((item: { owned: any; }) => !item.owned))
+       setCarData(
+           cars.filter((item: { owned: any; }) => !item.owned)
+               .sort(function(a: { name: string; }, b: { name: string; }) {
+                   const textA = a.name.toUpperCase();
+                   const textB = b.name.toUpperCase();
+                   return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+               })
+       )
     }
 
     if(loading){
