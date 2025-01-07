@@ -36,7 +36,14 @@ const TrackTable = () => {
                 let tracks = await import('../../data/tracks.json');
                 console.log(tracks.default);
                 await store.set('tracks', tracks.default);
-                setTrackData(tracks.default.filter(item => !item.owned));
+                setTrackData(
+                    tracks.default.filter(item => !item.owned)
+                        .sort(function(a, b) {
+                            const textA = a.name.toUpperCase();
+                            const textB = b.name.toUpperCase();
+                            return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+                        })
+                );
                 return;
             }
         }
@@ -44,10 +51,24 @@ const TrackTable = () => {
             let tracks = await import('../../data/tracks.json');
             console.log(tracks.default);
             await store.set('tracks', tracks.default);
-            setTrackData(tracks.default.filter(item => !item.owned));
+            setTrackData(
+                tracks.default.filter(item => !item.owned)
+                    .sort(function(a, b) {
+                        const textA = a.name.toUpperCase();
+                        const textB = b.name.toUpperCase();
+                        return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+                    })
+            );
             return;
         }
-        setTrackData(tracks.filter((item: { owned: boolean; }) => !item.owned))
+        setTrackData(
+            tracks.filter((item: { owned: boolean; }) => !item.owned)
+                .sort(function(a: { name: string; }, b: { name: string; }) {
+                    const textA = a.name.toUpperCase();
+                    const textB = b.name.toUpperCase();
+                    return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+                })
+        )
     }
 
     useEffect(() => {
