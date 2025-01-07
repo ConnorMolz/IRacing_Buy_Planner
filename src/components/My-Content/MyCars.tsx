@@ -23,6 +23,7 @@ const MyCars = (cars: cars) => {
                 {
                     cars.carList.map((car: any) => (
                         <tr key={car.id}>
+                            <td></td>
                             <td>{car.name}</td>
                         </tr>
                     ))
