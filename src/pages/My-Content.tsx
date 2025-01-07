@@ -1,16 +1,20 @@
 import {useEffect, useState} from "react";
 import {load} from "@tauri-apps/plugin-store";
 import Navbar from "../components/Navbar.tsx";
+import MyCars from "../components/My-Content/MyCars.tsx";
+import MyTracks from "../components/My-Content/MyTracks.tsx";
 
 const MyContent = () =>{
     const [carData, setCarData] = useState<any>([]);
-    const [render, setRender] = useState(false)
+    const [render, setRender] = useState(false);
     const [trackData, setTrackData] = useState<any>([]);
-
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
             getCars().then();
-            getTracks().then()
+            getTracks().then(() =>
+                setLoading(false)
+            );
         }
     );
 
@@ -47,55 +51,18 @@ const MyContent = () =>{
         setTrackData(tracks)
     }
 
+    if(loading){
+        return <div>Loading...</div>
+    }
+
+
     return (
         <div>
             <Navbar />
             <div className="py-8 text-2xl underline underline-offset-1">Cars</div>
-            <div className="overflow-x-auto">
-                <table className="table">
-                    {/* head */}
-                    <thead>
-                    <tr>
-                        <th></th>
-                        <th>Car Name</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    {
-                        carData.map((car: any) => (
-                            <tr key={car.id}>
-                                <td></td>
-                                <td>{car.name}</td>
-                            </tr>
-                        ))
-                    }
-                    </tbody>
-                </table>
-            </div>
+            <MyCars cars={carData}/>
             <div className="py-8 text-2xl underline underline-offset-1">Tracks</div>
-            <div className="overflow-x-auto">
-                <table className="table">
-                    {/* head */}
-                    <thead>
-                    <tr>
-                        <th></th>
-                        <th>Track Name</th>
-                        <th>Variants</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    {
-                        trackData.map((track: any) => (
-                            <tr key={track.id}>
-                                <td></td>
-                                <td>{track.name}</td>
-                                <td>{track.variants}</td>
-                            </tr>
-                        ))
-                    }
-                    </tbody>
-                </table>
-            </div>
+            <MyTracks tracks={trackData}/>
         </div>
     );
 }
