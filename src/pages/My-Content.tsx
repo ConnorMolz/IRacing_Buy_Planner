@@ -24,7 +24,12 @@ const MyContent = () =>{
 
         let cars = await store.get<any>('cars');
         console.log(cars)
-        cars = cars.filter((item: { owned: boolean; }) => item.owned);
+        cars = cars.filter((item: { owned: boolean; }) => item.owned)
+            .sort(function(a: { name: string; }, b: { name: string; }) {
+                const textA = a.name.toUpperCase();
+                const textB = b.name.toUpperCase();
+                return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+            });
         setCarData(cars)
     }
 
@@ -33,7 +38,12 @@ const MyContent = () =>{
 
         let tracks = await store.get<any>('tracks');
         console.log(tracks)
-        tracks = tracks.filter((item: {owned: boolean; }) => item.owned);
+        tracks = tracks.filter((item: {owned: boolean; }) => item.owned)
+            .sort(function(a: { name: string; }, b: { name: string; }) {
+                const textA = a.name.toUpperCase();
+                const textB = b.name.toUpperCase();
+                return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+            });
         setTrackData(tracks)
     }
 
