@@ -85,11 +85,11 @@ const CartControl = () => {
         let trackCartFunc = await store.get("tracks");
         for(let i = 0; i < carCart.length; i++){
             // @ts-ignore
-            carCartFunc[carCart[i].id - 1].owned = true;
+            carCartFunc[carCart[i].id].owned = true;
         }
         for(let i = 0; i < trackCart.length; i++){
             // @ts-ignore
-            trackCartFunc[trackCart[i].id - 1].owned = true;
+            trackCartFunc[trackCart[i].id].owned = true;
         }
 
         await store.set("cars", carCartFunc);
