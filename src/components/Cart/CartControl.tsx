@@ -11,7 +11,7 @@ const CartControl = () => {
     useEffect(() => {
             getCarts().then();
             getClubs().then();
-        }
+        },[]
     );
 
     const getClubs = async () => {
