@@ -17,7 +17,7 @@ const MyContent = () =>{
             getTracks().then(() =>
                 setLoading(false)
             );
-        }
+        },[]
     );
 
     useEffect(() => {
