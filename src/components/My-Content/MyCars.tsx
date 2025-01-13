@@ -22,9 +22,9 @@ const MyCars = (cars: cars) => {
                 <tbody>
                 {
                     cars.carList.map((car: any) => (
-                        <tr key={car.id}>
+                        <tr key={car.car_id}>
                             <td></td>
-                            <td>{car.name}</td>
+                            <td>{car.car_name}</td>
                         </tr>
                     ))
                 }

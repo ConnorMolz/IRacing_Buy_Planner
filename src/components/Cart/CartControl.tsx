@@ -19,9 +19,9 @@ const CartControl = () => {
         let cars = await store.get("cars");
         let tracks = await store.get("tracks");
         // @ts-ignore
-        cars = cars.filter((item: { owned: boolean, free: boolean }) => item.owned && !item.free);
+        cars = cars.filter((item: { car_owned: boolean, free: boolean }) => item.car_owned && !item.free);
         // @ts-ignore
-        tracks = tracks.filter((item: { owned: boolean, free: boolean }) => item.owned && !item.free);
+        tracks = tracks.filter((item: { owned: boolean, free: boolean }) => item.track_owned && !item.free);
         // @ts-ignore
         if(cars.length + tracks.length >= 97){
             setClub97(true);
@@ -52,10 +52,10 @@ const CartControl = () => {
     const calcPrice = () => {
         let price = 0;
         for(let i = 0; i < carCart.length; i++){
-            price = carCart[i].cost + price;
+            price = carCart[i].car_price + price;
         }
         for(let i = 0; i < trackCart.length; i++){
-            price = trackCart[i].cost + price;
+            price = trackCart[i].track_price + price;
         }
 
         if(club40){
@@ -87,9 +87,9 @@ const CartControl = () => {
             // @ts-ignore
             for(let j = 0; j < carCartFunc.length; j++){
                 // @ts-ignore
-                if(carCartFunc[j].id == carCart[i].id){
+                if(carCartFunc[j].car_id == carCart[i].car_id){
                     // @ts-ignore
-                    carCartFunc[j].owned = true;
+                    carCartFunc[j].car_owned = true;
                     break;
                 }
             }
@@ -98,10 +98,9 @@ const CartControl = () => {
             // @ts-ignore
             for(let j = 0; j < trackCartFunc.length; j++){
                 // @ts-ignore
-                if(trackCartFunc[j].id == trackCart[i].id){
+                if(trackCartFunc[j].package_id == trackCart[i].package_id){
                     // @ts-ignore
-                    trackCartFunc[j].owned = true;
-                    break;
+                    trackCartFunc[j].track_owned = true;
                 }
             }
         }
