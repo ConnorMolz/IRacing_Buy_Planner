@@ -7,7 +7,7 @@ const Navbar = () =>{
         <Link to="/" className="btn btn-ghost text-xl">IRacing Buy Planner</Link>
             </div>
             <div className="flex-none">
-                <div className="dropdown dropdown-end">
+                <div className="dropdown dropdown-end dropdown-bottom">
                     <div tabIndex={0} role="button" className="btn btn-ghost rounded-btn">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
