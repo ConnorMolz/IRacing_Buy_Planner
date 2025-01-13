@@ -3,6 +3,7 @@ import {load} from "@tauri-apps/plugin-store";
 import Navbar from "../components/Navbar.tsx";
 import MyCars from "../components/My-Content/MyCars.tsx";
 import MyTracks from "../components/My-Content/MyTracks.tsx";
+import trackListFilter from "../lib/TrackListFilter.ts";
 
 const MyContent = () =>{
     const [freeCarData, setFreeCarData] = useState<any>([]);
@@ -64,8 +65,8 @@ const MyContent = () =>{
                 const textB = b.track_name.toUpperCase();
                 return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
             });
-        setFreeTrackData(freeTracks);
-        setPaidTrackData(paidTracks);
+        setFreeTrackData(trackListFilter(freeTracks));
+        setPaidTrackData(trackListFilter(paidTracks));
     }
 
     if(loading){

@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import { load } from '@tauri-apps/plugin-store';
+import trackListFilter from "../../lib/TrackListFilter.ts";
 
 const TrackTable = () => {
 
@@ -37,12 +38,14 @@ const TrackTable = () => {
                 console.log(tracks.default);
                 await store.set('tracks', tracks.default);
                 setTrackData(
-                    tracks.default.filter(item => !item.track_owned)
-                        .sort(function(a, b) {
-                            const textA = a.track_name.toUpperCase();
-                            const textB = b.track_name.toUpperCase();
-                            return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-                        })
+                    trackListFilter(
+                        tracks.default.filter(item => !item.track_owned)
+                            .sort(function(a, b) {
+                                const textA = a.track_name.toUpperCase();
+                                const textB = b.track_name.toUpperCase();
+                                return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+                            })
+                    )
                 );
                 return;
             }
@@ -52,22 +55,26 @@ const TrackTable = () => {
             console.log(tracks.default);
             await store.set('tracks', tracks.default);
             setTrackData(
-                tracks.default.filter(item => !item.track_owned)
-                    .sort(function(a, b) {
-                        const textA = a.track_name.toUpperCase();
-                        const textB = b.track_name.toUpperCase();
-                        return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-                    })
+                trackListFilter(
+                    tracks.default.filter(item => !item.track_owned)
+                        .sort(function(a, b) {
+                            const textA = a.track_name.toUpperCase();
+                            const textB = b.track_name.toUpperCase();
+                            return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+                        })
+                )
             );
             return;
         }
         setTrackData(
-            tracks.filter((item: { owned: boolean; }) => !item.owned)
-                .sort(function(a: { track_name: string; }, b: { track_name: string; }) {
-                    const textA = a.track_name.toUpperCase();
-                    const textB = b.track_name.toUpperCase();
-                    return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-                })
+            trackListFilter(
+                tracks.filter((item: { track_owned: boolean; }) => !item.track_owned)
+                    .sort(function(a: { track_name: string; }, b: { track_name: string; }) {
+                        const textA = a.track_name.toUpperCase();
+                        const textB = b.track_name.toUpperCase();
+                        return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+                    })
+            )
         )
     }
 
