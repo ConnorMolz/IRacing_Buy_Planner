@@ -87,9 +87,9 @@ const CartControl = () => {
             // @ts-ignore
             for(let j = 0; j < carCartFunc.length; j++){
                 // @ts-ignore
-                if(carCartFunc[j].id == carCart[i].id){
+                if(carCartFunc[j].car_id == carCart[i].car_id){
                     // @ts-ignore
-                    carCartFunc[j].owned = true;
+                    carCartFunc[j].car_owned = true;
                     break;
                 }
             }
@@ -98,10 +98,9 @@ const CartControl = () => {
             // @ts-ignore
             for(let j = 0; j < trackCartFunc.length; j++){
                 // @ts-ignore
-                if(trackCartFunc[j].id == trackCart[i].id){
+                if(trackCartFunc[j].package_id == trackCart[i].package_id){
                     // @ts-ignore
-                    trackCartFunc[j].owned = true;
-                    break;
+                    trackCartFunc[j].track_owned = true;
                 }
             }
         }
