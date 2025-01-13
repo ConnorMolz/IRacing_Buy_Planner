@@ -30,16 +30,16 @@ const MyContent = () =>{
 
         let cars = await store.get<any>('cars');
         console.log(cars)
-        const freeCars = cars.filter((item: { owned: boolean; free:boolean}) => item.owned && item.free)
-            .sort(function(a: { name: string; }, b: { name: string; }) {
-                const textA = a.name.toUpperCase();
-                const textB = b.name.toUpperCase();
+        const freeCars = cars.filter((item: { car_owned: boolean; free:boolean}) => item.car_owned && item.free)
+            .sort(function(a: { car_name: string; }, b: { car_name: string; }) {
+                const textA = a.car_name.toUpperCase();
+                const textB = b.car_name.toUpperCase();
                 return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
             });
-        const paidCars = cars.filter((item: { owned: boolean; free:boolean}) => item.owned && !item.free)
-            .sort(function(a: { name: string; }, b: { name: string; }) {
-                const textA = a.name.toUpperCase();
-                const textB = b.name.toUpperCase();
+        const paidCars = cars.filter((item: { car_owned: boolean; free:boolean}) => item.car_owned && !item.free)
+            .sort(function(a: { car_name: string; }, b: { car_name: string; }) {
+                const textA = a.car_name.toUpperCase();
+                const textB = b.car_name.toUpperCase();
                 return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
             });
         setFreeCarData(freeCars);
@@ -52,16 +52,16 @@ const MyContent = () =>{
 
         let tracks = await store.get<any>('tracks');
         console.log(tracks)
-        const freeTracks = tracks.filter((item: {owned: boolean; free:boolean }) => item.owned && item.free)
-            .sort(function(a: { name: string; }, b: { name: string; }) {
-                const textA = a.name.toUpperCase();
-                const textB = b.name.toUpperCase();
+        const freeTracks = tracks.filter((item: {track_owned: boolean; free:boolean }) => item.track_owned && item.free)
+            .sort(function(a: { track_name: string; }, b: { track_name: string; }) {
+                const textA = a.track_name.toUpperCase();
+                const textB = b.track_name.toUpperCase();
                 return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
             });
-        const paidTracks = tracks.filter((item: {owned: boolean; free:boolean }) => item.owned && !item.free)
-            .sort(function(a: { name: string; }, b: { name: string; }) {
-                const textA = a.name.toUpperCase();
-                const textB = b.name.toUpperCase();
+        const paidTracks = tracks.filter((item: {track_owned: boolean; free:boolean }) => item.track_owned && !item.free)
+            .sort(function(a: { track_name: string; }, b: { track_name: string; }) {
+                const textA = a.track_name.toUpperCase();
+                const textB = b.track_name.toUpperCase();
                 return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
             });
         setFreeTrackData(freeTracks);

@@ -17,9 +17,9 @@ const MyTracks = (tracks:tracks) => {
                 <tbody>
                 {
                     tracks.trackList.map((track: any) => (
-                        <tr key={track.id}>
+                        <tr key={track.track_id}>
                             <td></td>
-                            <td>{track.name}</td>
+                            <td>{track.track_name}</td>
                             <td>{track.variants}</td>
                         </tr>
                     ))
