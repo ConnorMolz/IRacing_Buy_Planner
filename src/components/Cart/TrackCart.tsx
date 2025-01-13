@@ -31,15 +31,15 @@ const TrackCart = () =>{
     const calcPrice = () => {
         let price = 0;
         for(let i = 0; i < cart.length; i++){
-            price = cart[i].cost + price;
+            price = cart[i].track_price + price;
         }
         return price.toFixed(2);
     }
 
     const removeFromCart = async (id:any) => {
-        setCart(cart.filter(item => item.id !== id));
+        setCart(cart.filter(item => item.track_id !== id));
         const store = await load("store.json", {autoSave: true});
-        await store.set("trackCart", cart.filter(item => item.id !== id));
+        await store.set("trackCart", cart.filter(item => item.track_id !== id));
     }
 
     if(loading){
@@ -91,13 +91,13 @@ const TrackCart = () =>{
                                             <tr key={track.id}>
                                                 <td>
                                                     <button className="btn btn-error"
-                                                            onClick={() => removeFromCart(track.id)}>
+                                                            onClick={() => removeFromCart(track.track_id)}>
                                                         Remove
                                                     </button>
                                                 </td>
-                                                <td>{track.name}</td>
+                                                <td>{track.track_name}</td>
                                                 <td>{track.variants}</td>
-                                                <td>{track.cost}$</td>
+                                                <td>{track.track_price}$</td>
                                             </tr>
                                         ))
                                     }
