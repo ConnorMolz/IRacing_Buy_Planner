@@ -46,10 +46,10 @@ const CarTable = () => {
                 console.log(cars.default);
                 await store.set('cars', cars.default);
                 setCarData(
-                    cars.default.filter(item => !item.owned)
+                    cars.default.filter(item => !item.car_owned)
                         .sort(function(a, b) {
-                            const textA = a.name.toUpperCase();
-                            const textB = b.name.toUpperCase();
+                            const textA = a.car_name.toUpperCase();
+                            const textB = b.car_name.toUpperCase();
                             return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
                         })
                 );
@@ -61,10 +61,10 @@ const CarTable = () => {
             console.log(cars.default);
             await store.set('cars', cars.default);
             setCarData(
-                cars.default.filter(item => !item.owned)
+                cars.default.filter(item => !item.car_owned)
                     .sort(function(a, b) {
-                        const textA = a.name.toUpperCase();
-                        const textB = b.name.toUpperCase();
+                        const textA = a.car_name.toUpperCase();
+                        const textB = b.car_name.toUpperCase();
                         return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
                     })
             );
@@ -72,9 +72,9 @@ const CarTable = () => {
         }
        setCarData(
            cars.filter((item: { owned: any; }) => !item.owned)
-               .sort(function(a: { name: string; }, b: { name: string; }) {
-                   const textA = a.name.toUpperCase();
-                   const textB = b.name.toUpperCase();
+               .sort(function(a: { car_name: string; }, b: { car_name: string; }) {
+                   const textA = a.car_name.toUpperCase();
+                   const textB = b.car_name.toUpperCase();
                    return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
                })
        )
@@ -91,7 +91,7 @@ const CarTable = () => {
             // @ts-ignore
             for(let i = 0; i < cart.length; i++){
                 // @ts-ignore
-                if(cart[i].id == id){
+                if(cart[i].car_id == id){
                     return <p className="text-xl">In Cart</p>
                 }
             }
@@ -109,7 +109,7 @@ const CarTable = () => {
             carCart = []
         }
         // @ts-ignore
-        carCart.push(carData.filter(item => item.id === id)[0]);
+        carCart.push(carData.filter(item => item.car_id === id)[0]);
         await store.set("carCart", carCart);
         setCart(carCart);
         setRender(true);
@@ -130,12 +130,12 @@ const CarTable = () => {
             <tbody>
             {
                 carData.map((car: any) => (
-                    <tr key={car.id}>
+                    <tr key={car.car_id}>
                         <td></td>
-                        <td>{car.name}</td>
-                        <td>{car.cost}$</td>
+                        <td>{car.car_name}</td>
+                        <td>{car.car_price}$</td>
                         <td>{car.owned ?
-                            <p className="text-xl accent-green-500">Owned</p> : checkInCart(car.id)}</td>
+                            <p className="text-xl accent-green-500">Owned</p> : checkInCart(car.car_id)}</td>
                     </tr>
                 ))
             }

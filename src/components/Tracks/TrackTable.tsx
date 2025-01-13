@@ -37,10 +37,10 @@ const TrackTable = () => {
                 console.log(tracks.default);
                 await store.set('tracks', tracks.default);
                 setTrackData(
-                    tracks.default.filter(item => !item.owned)
+                    tracks.default.filter(item => !item.track_owned)
                         .sort(function(a, b) {
-                            const textA = a.name.toUpperCase();
-                            const textB = b.name.toUpperCase();
+                            const textA = a.track_name.toUpperCase();
+                            const textB = b.track_name.toUpperCase();
                             return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
                         })
                 );
@@ -52,10 +52,10 @@ const TrackTable = () => {
             console.log(tracks.default);
             await store.set('tracks', tracks.default);
             setTrackData(
-                tracks.default.filter(item => !item.owned)
+                tracks.default.filter(item => !item.track_owned)
                     .sort(function(a, b) {
-                        const textA = a.name.toUpperCase();
-                        const textB = b.name.toUpperCase();
+                        const textA = a.track_name.toUpperCase();
+                        const textB = b.track_name.toUpperCase();
                         return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
                     })
             );
@@ -63,9 +63,9 @@ const TrackTable = () => {
         }
         setTrackData(
             tracks.filter((item: { owned: boolean; }) => !item.owned)
-                .sort(function(a: { name: string; }, b: { name: string; }) {
-                    const textA = a.name.toUpperCase();
-                    const textB = b.name.toUpperCase();
+                .sort(function(a: { track_name: string; }, b: { track_name: string; }) {
+                    const textA = a.track_name.toUpperCase();
+                    const textB = b.track_name.toUpperCase();
                     return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
                 })
         )
@@ -87,7 +87,7 @@ const TrackTable = () => {
             // @ts-ignore
             for(let i = 0; i < cart.length; i++){
                 // @ts-ignore
-                if(cart[i].id == id){
+                if(cart[i].package_id == id){
                     return <p className="text-xl">In Cart</p>
                 }
             }
@@ -106,7 +106,7 @@ const TrackTable = () => {
             trackCart = []
         }
         // @ts-ignore
-        trackCart.push(trackData.filter(item => item.id === id)[0]);
+        trackCart.push(trackData.filter(item => item.package_id === id)[0]);
         setCart(trackCart);
         await store.set("trackCart", trackCart);
         setRender(true);
@@ -134,13 +134,13 @@ const TrackTable = () => {
                 <tbody>
                 {
                     trackData.map((track: any) => (
-                        <tr key={track.id}>
+                        <tr key={track.package_id}>
                             <td></td>
-                            <td>{track.name}</td>
+                            <td>{track.track_name}</td>
                             <td>{track.variants}</td>
-                            <td>{track.cost}$</td>
+                            <td>{track.track_price}$</td>
                             <td>{track.owned ?
-                                <p className="text-xl accent-green-500">Owned</p> : checkInCart(track.id)}
+                                <p className="text-xl accent-green-500">Owned</p> : checkInCart(track.package_id)}
                             </td>
                         </tr>
                     ))
