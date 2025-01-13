@@ -1,9 +1,11 @@
 import {Link} from "react-router";
 import Navbar from "../components/Navbar.tsx";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import {load} from "@tauri-apps/plugin-store"
 
 const Home = () =>{
+
+    const [datasetUpdate, setDatasetUpdate] = useState<boolean>(false)
 
     useEffect(() => {
        checkStore().then();
@@ -11,6 +13,18 @@ const Home = () =>{
 
     const checkStore = async() => {
         const store = await load("store.json", {autoSave:true});
+
+        const newestDataVersion = 1
+        await store.set("current-version", newestDataVersion);
+
+        const current = await store.get('data-version')
+        if(current != 1){
+            await store.set('data-version', 1);
+        }
+
+        if(current != newestDataVersion){
+            setDatasetUpdate(true);
+        }
 
         // Cars
         const cars = await store.get<any>('cars');
@@ -38,6 +52,7 @@ const Home = () =>{
                 let tracks = await import('../data/tracks.json');
                 console.log(tracks.default);
                 await store.set('tracks', tracks.default);
+                await store.set('data-version', 1);
                 return;
             }
         }
@@ -45,6 +60,7 @@ const Home = () =>{
             let tracks = await import('../data/tracks.json');
             console.log(tracks.default);
             await store.set('tracks', tracks.default);
+            await store.set('data-version', 1);
             return;
         }
 
@@ -63,6 +79,16 @@ const Home = () =>{
     return(
         <div>
             <Navbar/>
+            {datasetUpdate &&
+                <div role="alert" className="alert alert-info">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                         className="h-6 w-6 shrink-0 stroke-current">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span><Link to={"/Options"}>A new dataset update available.</Link></span>
+                </div>
+            }
             <div className="py-2.5"></div>
             <div className="justify-center flex py-2.5">
                 <Link to={"/cars"} className="btn btn-primary h-20 w-4/5">
