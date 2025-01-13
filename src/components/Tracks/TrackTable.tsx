@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import { load } from '@tauri-apps/plugin-store';
 import trackListFilter from "../../lib/TrackListFilter.ts";
+import VariantCounter from "../../lib/VariantCounter.ts";
 
 const TrackTable = () => {
 
@@ -8,6 +9,7 @@ const TrackTable = () => {
     const [trackData, setTrackData] = useState<any>([]);
     const [render, setRender] = useState(false)
     const [cart, setCart] = useState<any>([]);
+    const [fullTrackList, setFullTrackList] = useState<any>([])
 
     useEffect(() => {
             if(trackData.length > 20){
@@ -47,6 +49,7 @@ const TrackTable = () => {
                             })
                     )
                 );
+                setFullTrackList(tracks.default);
                 return;
             }
         }
@@ -64,6 +67,7 @@ const TrackTable = () => {
                         })
                 )
             );
+            setFullTrackList(tracks.default);
             return;
         }
         setTrackData(
@@ -75,7 +79,8 @@ const TrackTable = () => {
                         return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
                     })
             )
-        )
+        );
+        setFullTrackList(tracks);
     }
 
     useEffect(() => {
@@ -144,7 +149,7 @@ const TrackTable = () => {
                         <tr key={track.package_id}>
                             <td></td>
                             <td>{track.track_name}</td>
-                            <td>{track.variants}</td>
+                            <td>{VariantCounter(fullTrackList, track.track_name)}</td>
                             <td>{track.track_price}$</td>
                             <td>{track.owned ?
                                 <p className="text-xl accent-green-500">Owned</p> : checkInCart(track.package_id)}

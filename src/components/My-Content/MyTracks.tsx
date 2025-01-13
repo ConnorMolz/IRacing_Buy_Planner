@@ -1,5 +1,8 @@
+import VariantCounter from "../../lib/VariantCounter.ts";
+
 interface tracks {
-    trackList: any[]
+    trackList: any[],
+    allTracks: any[]
 }
 
 const MyTracks = (tracks:tracks) => {
@@ -20,7 +23,7 @@ const MyTracks = (tracks:tracks) => {
                         <tr key={track.track_id}>
                             <td></td>
                             <td>{track.track_name}</td>
-                            <td>{track.variants}</td>
+                            <td>{VariantCounter(tracks.allTracks, track.track_name)}</td>
                         </tr>
                     ))
                 }

@@ -11,6 +11,7 @@ const MyContent = () =>{
     const [render, setRender] = useState(false);
     const [freeTrackData, setFreeTrackData] = useState<any>([]);
     const [paidTrackData, setPaidTrackData] = useState<any>([]);
+    const [fullTrackList, setFullTrackList] = useState<any>([])
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -67,6 +68,7 @@ const MyContent = () =>{
             });
         setFreeTrackData(trackListFilter(freeTracks));
         setPaidTrackData(trackListFilter(paidTracks));
+        setFullTrackList(tracks);
     }
 
     if(loading){
@@ -81,14 +83,14 @@ const MyContent = () =>{
             <div className="py-8 text-2xl underline underline-offset-1">Cars</div>
             <MyCars carList={paidCarData}/>
             <div className="py-8 text-2xl underline underline-offset-1">Tracks</div>
-            <MyTracks trackList={paidTrackData}/>
+            <MyTracks trackList={paidTrackData} allTracks={fullTrackList}/>
             <div className="flex w-full flex-col">
                 <div className="divider divider-start py-12 text-3xl underline underline-offset-1">Free Content</div>
             </div>
             <div className="py-8 text-2xl underline underline-offset-1">Cars</div>
             <MyCars carList={freeCarData}/>
             <div className="py-8 text-2xl underline underline-offset-1">Tracks</div>
-            <MyTracks trackList={freeTrackData}/>
+            <MyTracks trackList={freeTrackData} allTracks={fullTrackList}/>
         </div>
     );
 }

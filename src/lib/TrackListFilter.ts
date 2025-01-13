@@ -1,11 +1,11 @@
-const TrackListFilter = (trackList: {package_id: number}[]) => {
-    // Create a Map to track seen package_ids
-    const seen = new Map();
+const TrackListFilter = (trackList: {track_name: string}[]) => {
+    // Create a Set to track seen track_names
+    const seen = new Set();
 
     // Filter the array
     return trackList.filter(item => {
-        if (!seen.has(item.package_id)) {
-            seen.set(item.package_id, true);
+        if (!seen.has(item.track_name)) {
+            seen.add(item.track_name);
             return true; // Keep this item
         }
         return false; // Skip duplicates
