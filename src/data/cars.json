@@ -1,1024 +1,3833 @@
 [
-  {
-    "id": 1,
-    "name": "ARCA Menards Chevy/Gen 4 Cup",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 2,
-    "name": "Cadillac CTS-V Racecar",
-    "cost": 0,
-    "free": true,
-    "owned": true
-  },
-  {
-    "id": 3,
-    "name": "Dirt Late Model",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 4,
-    "name": "Legends Ford 34 Coupe",
-    "cost": 0,
-    "free": true,
-    "owned": true
-  },
-  {
-    "id": 5,
-    "name": "Dirt Midget",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 6,
-    "name": "Dirt Sprint Car",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 7,
-    "name": "Dirt Sprint Car - Non-Winged",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 8,
-    "name": "Dirt Street Stock",
-    "cost": 0,
-    "free": true,
-    "owned": true
-  },
-  {
-    "id": 9,
-    "name": "Dirt UMP Modified",
-    "cost": 0,
-    "free": true,
-    "owned": true
-  },
-  {
-    "id": 10,
-    "name": "Global Mazda MX-5 Cup",
-    "cost": 0,
-    "free": true,
-    "owned": true
-  },
-  {
-    "id": 11,
-    "name": "Kia Optima",
-    "cost": 0,
-    "free": true,
-    "owned": true
-  },
-  {
-    "id": 12,
-    "name": "Lucas Oil Off Road Pro 2 Lite Truck",
-    "cost": 0,
-    "free": true,
-    "owned": true
-  },
-  {
-    "id": 13,
-    "name": "Pontiac Solstice",
-    "cost": 0,
-    "free": true,
-    "owned": true
-  },
-  {
-    "id": 14,
-    "name": "Radical SR8",
-    "cost": 0,
-    "free": true,
-    "owned": true
-  },
-  {
-    "id": 15,
-    "name": "SCCA Spec Racer Ford",
-    "cost": 0,
-    "free": true,
-    "owned": true
-  },
-  {
-    "id": 16,
-    "name": "Street Stock - Panther C1",
-    "cost": 0,
-    "free": true,
-    "owned": true
-  },
-  {
-    "id": 17,
-    "name": "VW Beetle",
-    "cost": 0,
-    "free": true,
-    "owned": true
-  },
-  {
-    "id": 18,
-    "name": "VW Jetta TDI Cup",
-    "cost": 0,
-    "free": true,
-    "owned": true
-  },
-  {
-    "id": 19,
-    "name": "[Legacy] Dallara DW12",
-    "cost": 0,
-    "free": true,
-    "owned": true
-  },
-  {
-    "id": 20,
-    "name": "[Legacy] Dallara IR-05",
-    "cost": 2.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 21,
-    "name": "[Legacy] Mazda MX-5 Cup & Roadster - 2010",
-    "cost": 2.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 22,
-    "name": "[Legacy] NASCAR Cup Chevrolet Impala COT - 2009",
-    "cost": 2.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 23,
-    "name": "[Legacy] NASCAR Cup Chevrolet SS - 2013",
-    "cost": 2.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 24,
-    "name": "[Legacy] NASCAR Cup Ford Fusion - 2016",
-    "cost": 2.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 25,
-    "name": "[Legacy] NASCAR Nationwide Chevrolet Impala - 2012",
-    "cost": 2.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 26,
-    "name": "[Legacy] NASCAR Truck Chevrolet Silverado - 2008",
-    "cost": 0,
-    "free": true,
-    "owned": true
-  },
-  {
-    "id": 27,
-    "name": "[Legacy] NASCAR Xfinity Chevrolet Camaro - 2014",
-    "cost": 2.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 28,
-    "name": "[Legacy] NASCAR Xfinity Ford Mustang - 2016",
-    "cost": 2.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 29,
-    "name": "[Legacy] NASCAR Xfinity Toyota Camry - 2015",
-    "cost": 2.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 30,
-    "name": "[Legacy] Pro Mazda",
-    "cost": 2.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 31,
-    "name": "[Legacy] Riley MkXX Daytona Prototype - 2008",
-    "cost": 2.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 32,
-    "name": "[Legacy] V8 Supercar Ford FG Falcon - 2014",
-    "cost": 2.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 33,
-    "name": "[Legacy] V8 Supercar Ford Falcon - 2009",
-    "cost": 2.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 34,
-    "name": "[Legacy] V8 Supercar Holden VF Commodore - 2014",
-    "cost": 2.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 35,
-    "name": "Aston Martin DBR9 GT1",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 36,
-    "name": "Audi 90 GTO",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 37,
-    "name": "Audi R18",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 38,
-    "name": "[Legacy] Audi R8 LMS",
-    "cost": 2.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 39,
-    "name": "Audi RS 3 LMS",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 40,
-    "name": "BMW M4 F82 GT4 - 2018",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 41,
-    "name": "BMW M8 GTE",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 42,
-    "name": "[Legacy] BMW Z4 GT3",
-    "cost": 2.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 43,
-    "name": "Chevrolet Corvette C6.R GT1",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 44,
-    "name": "Chevrolet Corvette C7 Daytona Prototype",
-    "cost": 2.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 45,
-    "name": "Chevrolet Corvette C8.R GTE",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 46,
-    "name": "Late Model Stock",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 47,
-    "name": "Dallara F3",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 48,
-    "name": "Dallara IR18",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 49,
-    "name": "Dallara P217",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 50,
-    "name": "[Legacy] Ferrari 488 GT3",
-    "cost": 2.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 51,
-    "name": "Ferrari 488 GTE",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 52,
-    "name": "Ford Fiesta RS WRC",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 53,
-    "name": "Ford GT GT2/GT3",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 54,
-    "name": "Ford GTE",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 55,
-    "name": "Ford Mustang FR500S",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 56,
-    "name": "Formula Renault 2.0",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 57,
-    "name": "Formula Renault 3.5",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 58,
-    "name": "HPD ARX-01c",
-    "cost": 2.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 59,
-    "name": "Indy Pro 2000 PM-18",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 60,
-    "name": "Lotus 49",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 61,
-    "name": "Lotus 79",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 62,
-    "name": "Lucas Oil Off Road Pro Trucks",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 63,
-    "name": "McLaren MP4-12C GT3",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 64,
-    "name": "McLaren MP4-30",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 65,
-    "name": "[Legacy] Mercedes AMG GT3",
-    "cost": 2.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 66,
-    "name": "NASCAR Whelen Tour Modified",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 67,
-    "name": "NASCAR Whelen Tour Modified - SK",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 68,
-    "name": "NASCAR Legends Chevrolet Monte Carlo - 1987",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 69,
-    "name": "NASCAR Cup Series Chevrolet Camaro ZL1",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 70,
-    "name": "NASCAR Cup Series Ford Mustang",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 71,
-    "name": "NASCAR Cup Series Toyota Camry",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 72,
-    "name": "NASCAR Legends Ford Thunderbird - 1987",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 73,
-    "name": "NASCAR Truck Chevrolet Silverado",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 74,
-    "name": "NASCAR Truck Ford F150",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 75,
-    "name": "NASCAR Truck Toyota Tundra TRD Pro",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 76,
-    "name": "NASCAR XFINITY Chevrolet Camaro",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 77,
-    "name": "NASCAR XFINITY Ford Mustang",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 78,
-    "name": "NASCAR XFINITY Toyota Supra",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 79,
-    "name": "Nissan GTP ZX-T",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 80,
-    "name": "Porsche 718 Cayman GT4 Clubsport MR",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 81,
-    "name": "[Legacy] Porsche 911 GT3 Cup (991)",
-    "cost": 2.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 82,
-    "name": "Porsche 911 RSR",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 83,
-    "name": "Porsche 919",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 84,
-    "name": "Ruf RT 12R",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 85,
-    "name": "Silver Crown",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 86,
-    "name": "Skip Barber Formula 2000",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 87,
-    "name": "Sprint Car",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 88,
-    "name": "Subaru WRX STI",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 89,
-    "name": "Super Late Model",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 90,
-    "name": "[Legacy] Supercars Ford Mustang GT",
-    "cost": 2.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 91,
-    "name": "[Legacy] Supercars Holden ZB Commodore",
-    "cost": 2.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 92,
-    "name": "USF 2000",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 93,
-    "name": "Williams FW31",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 94,
-    "name": "Dirt Big Block Modified",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 95,
-    "name": "Dallara iR-01",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 96,
-    "name": "Lamborghini Huracan GT3 EVO",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 97,
-    "name": "BMW M4 GT3",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 98,
-    "name": "McLaren 570S GT4",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 99,
-    "name": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 100,
-    "name": "NASCAR Cup Series Next Gen Ford Mustang",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 101,
-    "name": "NASCAR Cup Series Next Gen Toyota Camry",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 102,
-    "name": "Formula Vee",
-    "cost": 0,
-    "free": true,
-    "owned": true
-  },
-  {
-    "id": 103,
-    "name": "[Legacy] Porsche 911 GT3 R",
-    "cost": 2.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 104,
-    "name": "VW Beetle Lite",
-    "cost": 0,
-    "free": true,
-    "owned": true
-  },
-  {
-    "id": 105,
-    "name": "Ferrari 296 GT3",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 106,
-    "name": "Porsche 911 GT3 Cup (992)",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 107,
-    "name": "Honda Civic Type R TCR",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 108,
-    "name": "Hyundai Elantra N TCR",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 109,
-    "name": "Mercedes-AMG F1 W12 E Performance",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 110,
-    "name": "Aston Martin Vantage GT4",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 111,
-    "name": "Hyundai Veloster N TCR",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 112,
-    "name": "FIA F4",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 113,
-    "name": "NASCAR Legends Buick LeSabre - 1987",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 114,
-    "name": "Stock Car Pro Series Toyota Corolla",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 115,
-    "name": "Stock Car Pro Series Chevrolet Cruze",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 116,
-    "name": "Mercedes-AMG GT3 2020",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 117,
-    "name": "Mercedes-AMG GT4",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 118,
-    "name": "Radical SR10",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 119,
-    "name": "Porsche Mission R",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 120,
-    "name": "BMW M Hybrid V8",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 121,
-    "name": "Mercedes-AMG W13 E Performance",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 122,
-    "name": "Toyota GR86",
-    "cost": 0,
-    "free": true,
-    "owned": true
-  },
-  {
-    "id": 123,
-    "name": "Ray FF1600",
-    "cost": 0,
-    "free": true,
-    "owned": true
-  },
-  {
-    "id": 124,
-    "name": "Renault Clio",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 125,
-    "name": "Cadillac V-Series.R GTP",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 126,
-    "name": "Ligier JS P320",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 127,
-    "name": "Porsche 911 GT3 R (992)",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 128,
-    "name": "Acura ARX-06 GTP",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 129,
-    "name": "NASCAR Legends Pontiac Grand Prix - 1987",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 130,
-    "name": "Porsche 963 GTP",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 131,
-    "name": "Super Formula SF23",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 132,
-    "name": "Audi R8 LMS EVO II GT3",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 133,
-    "name": "Dirt Micro Sprint Car",
-    "cost": 0,
-    "free": true,
-    "owned": true
-  },
-  {
-    "id": 134,
-    "name": "SRX",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 135,
-    "name": "Super Formula Lights",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 136,
-    "name": "Chevrolet Corvette Z06 GT3.R",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 137,
-    "name": "Ford Mustang GT3",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 138,
-    "name": "Street Stock - Casino M2/Eagle T3",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 139,
-    "name": "BMW M4 G82 GT4",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 140,
-    "name": "Mini Stock",
-    "cost": 0,
-    "free": true,
-    "owned": true
-  },
-  {
-    "id": 141,
-    "name": "McLaren 720S GT3 EVO",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 142,
-    "name": "Supercars Ford Mustang Gen 3",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 143,
-    "name": "Supercars Chevrolet Camaro Gen 3",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 144,
-    "name": "Ferrari 499P",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 145,
-    "name": "Acura NSX GT3 EVO 22",
-    "cost": 11.95,
-    "free": false,
-    "owned": false
-  },
-  {
-    "id": 146,
-    "name": "BMW M2 CS Racing",
-    "cost": 0,
-    "free": true,
-    "owned": true
-  }
+    {
+        "car_id": 1,
+        "car_name": "Skip Barber Formula 2000",
+        "car_types": [
+            {
+                "car_type": "openwheel"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "rt2000"
+            },
+            {
+                "car_type": "sbrs"
+            },
+            {
+                "car_type": "skippy"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "formula_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 2,
+        "car_name": "Modified - SK",
+        "car_types": [
+            {
+                "car_type": "mod"
+            },
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "sk mod"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 3,
+        "car_name": "Pontiac Solstice",
+        "car_types": [
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "sports_car"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 4,
+        "car_name": "[Legacy] Pro Mazda",
+        "car_types": [
+            {
+                "car_type": "openwheel"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "starmazda"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 2.95,
+        "categories": [
+            "formula_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 5,
+        "car_name": "Legends Ford '34 Coupe",
+        "car_types": [
+            {
+                "car_type": "legends"
+            },
+            {
+                "car_type": "oval"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "oval"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 10,
+        "car_name": "Pontiac Solstice - Rookie",
+        "car_types": [
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "sports_car"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 11,
+        "car_name": "Legends Ford '34 Coupe - Rookie",
+        "car_types": [
+            {
+                "car_type": "legends"
+            },
+            {
+                "car_type": "oval"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "oval"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 13,
+        "car_name": "Radical SR8",
+        "car_types": [
+            {
+                "car_type": "prototype"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "sports_car"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 18,
+        "car_name": "Silver Crown",
+        "car_types": [
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "usac"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 20,
+        "car_name": "[Legacy] NASCAR Truck Chevrolet Silverado - 2008",
+        "car_types": [
+            {
+                "car_type": "chevy"
+            },
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "truck"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "oval"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 21,
+        "car_name": "[Legacy] Riley MkXX Daytona Prototype - 2008",
+        "car_types": [
+            {
+                "car_type": "daytonaprototype"
+            },
+            {
+                "car_type": "dp"
+            },
+            {
+                "car_type": "prototype"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 2.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 22,
+        "car_name": "[Legacy] NASCAR Cup Chevrolet Impala COT - 2009",
+        "car_types": [
+            {
+                "car_type": "chevy"
+            },
+            {
+                "car_type": "cot"
+            },
+            {
+                "car_type": "cupcar"
+            },
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "oval"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 2.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 23,
+        "car_name": "SCCA Spec Racer Ford",
+        "car_types": [
+            {
+                "car_type": "prototype"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "srf"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "sports_car"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 24,
+        "car_name": "ARCA Menards Chevrolet Impala",
+        "car_types": [
+            {
+                "car_type": "arca"
+            },
+            {
+                "car_type": "chevy"
+            },
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "oval"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 25,
+        "car_name": "Lotus 79",
+        "car_types": [
+            {
+                "car_type": "f1"
+            },
+            {
+                "car_type": "formula1"
+            },
+            {
+                "car_type": "formulaone"
+            },
+            {
+                "car_type": "l79"
+            },
+            {
+                "car_type": "openwheel"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "formula_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 26,
+        "car_name": "Chevrolet Corvette C6.R GT1",
+        "car_types": [
+            {
+                "car_type": "chevy"
+            },
+            {
+                "car_type": "gt1"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 27,
+        "car_name": "VW Jetta TDI Cup",
+        "car_types": [
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "sports_car"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 28,
+        "car_name": "[Legacy] V8 Supercar Ford Falcon - 2009",
+        "car_types": [
+            {
+                "car_type": "aussiev8"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            },
+            {
+                "car_type": "supercars"
+            },
+            {
+                "car_type": "v8sc"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 2.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 29,
+        "car_name": "[Legacy] Dallara IR-05",
+        "car_types": [
+            {
+                "car_type": "dallara"
+            },
+            {
+                "car_type": "openwheel"
+            },
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 2.95,
+        "categories": [
+            "formula_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 30,
+        "car_name": "Ford Mustang FR500S",
+        "car_types": [
+            {
+                "car_type": "mustanggt"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 31,
+        "car_name": "Modified - NASCAR Whelen Tour",
+        "car_types": [
+            {
+                "car_type": "mod"
+            },
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "tour mod"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 33,
+        "car_name": "Williams-Toyota FW31",
+        "car_types": [
+            {
+                "car_type": "f1"
+            },
+            {
+                "car_type": "formula1"
+            },
+            {
+                "car_type": "formulaone"
+            },
+            {
+                "car_type": "openwheel"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "formula_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 34,
+        "car_name": "[Legacy] Mazda MX-5 Cup - 2010",
+        "car_types": [
+            {
+                "car_type": "miata"
+            },
+            {
+                "car_type": "mx5"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "sports_car"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 35,
+        "car_name": "[Legacy] Mazda MX-5 Roadster - 2010",
+        "car_types": [
+            {
+                "car_type": "miata"
+            },
+            {
+                "car_type": "mx5"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "sports_car"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 36,
+        "car_name": "Street Stock - Panther C1",
+        "car_types": [
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "ss"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "oval"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 37,
+        "car_name": "Sprint Car",
+        "car_types": [
+            {
+                "car_type": "oval"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 38,
+        "car_name": "[Legacy] NASCAR Nationwide Chevrolet Impala - 2012",
+        "car_types": [
+            {
+                "car_type": "chevy"
+            },
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "nationwide"
+            },
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "xfinity"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 2.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 39,
+        "car_name": "HPD ARX-01c",
+        "car_types": [
+            {
+                "car_type": "lmp2"
+            },
+            {
+                "car_type": "prototype"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 2.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 40,
+        "car_name": "Ford GT GT2",
+        "car_types": [
+            {
+                "car_type": "gte"
+            },
+            {
+                "car_type": "gtlm"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 41,
+        "car_name": "Cadillac CTS-V Racecar",
+        "car_types": [
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "sports_car"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 42,
+        "car_name": "Lotus 49",
+        "car_types": [
+            {
+                "car_type": "f1"
+            },
+            {
+                "car_type": "formula1"
+            },
+            {
+                "car_type": "formulaone"
+            },
+            {
+                "car_type": "l49"
+            },
+            {
+                "car_type": "openwheel"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "formula_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 43,
+        "car_name": "[Legacy] McLaren MP4-12C GT3",
+        "car_types": [
+            {
+                "car_type": "gt3"
+            },
+            {
+                "car_type": "gtd"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 2.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 44,
+        "car_name": "Kia Optima",
+        "car_types": [
+            {
+                "car_type": "gs"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "sports_car"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 45,
+        "car_name": "[Legacy] NASCAR Cup Chevrolet SS - 2013",
+        "car_types": [
+            {
+                "car_type": "chevy"
+            },
+            {
+                "car_type": "cupcar"
+            },
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "oval"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 2.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 46,
+        "car_name": "[Legacy] NASCAR Cup Ford Fusion - 2016",
+        "car_types": [
+            {
+                "car_type": "cupcar"
+            },
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "oval"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 2.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 48,
+        "car_name": "Ruf RT 12R AWD",
+        "car_types": [
+            {
+                "car_type": "911"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 49,
+        "car_name": "Ruf RT 12R RWD",
+        "car_types": [
+            {
+                "car_type": "911"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 50,
+        "car_name": "Ruf RT 12R Track",
+        "car_types": [
+            {
+                "car_type": "911"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 51,
+        "car_name": "[Legacy] NASCAR Xfinity Ford Mustang - 2016",
+        "car_types": [
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "nationwide"
+            },
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "xfinity"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 2.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 52,
+        "car_name": "Ruf RT 12R C-Spec",
+        "car_types": [
+            {
+                "car_type": "911"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 54,
+        "car_name": "Super Late Model",
+        "car_types": [
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "slm"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 55,
+        "car_name": "[Legacy] BMW Z4 GT3",
+        "car_types": [
+            {
+                "car_type": "gt3"
+            },
+            {
+                "car_type": "gtd"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 2.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 56,
+        "car_name": "NASCAR Cup Series Toyota Camry",
+        "car_types": [
+            {
+                "car_type": "classa"
+            },
+            {
+                "car_type": "cupcar"
+            },
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "oval"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 57,
+        "car_name": "[Legacy] Dallara DW12",
+        "car_types": [
+            {
+                "car_type": "openwheel"
+            },
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "formula_car"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 58,
+        "car_name": "[Legacy] NASCAR Xfinity Chevrolet Camaro - 2014",
+        "car_types": [
+            {
+                "car_type": "chevy"
+            },
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "nationwide"
+            },
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "xfinity"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 2.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 59,
+        "car_name": "Ford GT GT3",
+        "car_types": [
+            {
+                "car_type": "gt3"
+            },
+            {
+                "car_type": "gtd"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 60,
+        "car_name": "[Legacy] V8 Supercar Holden VF Commodore - 2014",
+        "car_types": [
+            {
+                "car_type": "aussiev8"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            },
+            {
+                "car_type": "supercars"
+            },
+            {
+                "car_type": "v8sc"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 2.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 61,
+        "car_name": "[Legacy] V8 Supercar Ford FG Falcon - 2014",
+        "car_types": [
+            {
+                "car_type": "aussiev8"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            },
+            {
+                "car_type": "supercars"
+            },
+            {
+                "car_type": "v8sc"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 2.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 64,
+        "car_name": "Aston Martin DBR9 GT1",
+        "car_types": [
+            {
+                "car_type": "gt1"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 67,
+        "car_name": "Global Mazda MX-5 Cup",
+        "car_types": [
+            {
+                "car_type": "miata"
+            },
+            {
+                "car_type": "mx5"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "sports_car"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 69,
+        "car_name": "[Legacy] NASCAR Xfinity Toyota Camry - 2015",
+        "car_types": [
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "nationwide"
+            },
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "xfinity"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 2.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 70,
+        "car_name": "Chevrolet Corvette C7 Daytona Prototype",
+        "car_types": [
+            {
+                "car_type": "chevy"
+            },
+            {
+                "car_type": "daytonaprototype"
+            },
+            {
+                "car_type": "dp"
+            },
+            {
+                "car_type": "prototype"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 2.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 71,
+        "car_name": "McLaren MP4-30",
+        "car_types": [
+            {
+                "car_type": "f1"
+            },
+            {
+                "car_type": "formula1"
+            },
+            {
+                "car_type": "formulaone"
+            },
+            {
+                "car_type": "openwheel"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "formula_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 72,
+        "car_name": "[Legacy] Mercedes-AMG GT3",
+        "car_types": [
+            {
+                "car_type": "gt3"
+            },
+            {
+                "car_type": "gtd"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 2.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 73,
+        "car_name": "[Legacy] Audi R8 LMS GT3",
+        "car_types": [
+            {
+                "car_type": "gt3"
+            },
+            {
+                "car_type": "gtd"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 2.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 74,
+        "car_name": "Formula Renault 2.0",
+        "car_types": [
+            {
+                "car_type": "fr2.0"
+            },
+            {
+                "car_type": "openwheel"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "formula_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 76,
+        "car_name": "Audi 90 GTO",
+        "car_types": [
+            {
+                "car_type": "gto"
+            },
+            {
+                "car_type": "imsa"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 77,
+        "car_name": "Nissan GTP ZX-T",
+        "car_types": [
+            {
+                "car_type": "gtp"
+            },
+            {
+                "car_type": "imsa"
+            },
+            {
+                "car_type": "prototype"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 78,
+        "car_name": "Dirt Late Model - Limited",
+        "car_types": [
+            {
+                "car_type": "dirt"
+            },
+            {
+                "car_type": "dirtoval"
+            },
+            {
+                "car_type": "dlm"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "dirt_oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 79,
+        "car_name": "Dirt Street Stock",
+        "car_types": [
+            {
+                "car_type": "dirt"
+            },
+            {
+                "car_type": "dirtoval"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "dirt_oval"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 80,
+        "car_name": "Dirt Sprint Car - 305",
+        "car_types": [
+            {
+                "car_type": "dirt"
+            },
+            {
+                "car_type": "dirtoval"
+            },
+            {
+                "car_type": "wingedsprintcar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "dirt_oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 81,
+        "car_name": "Ford Fiesta RS WRC",
+        "car_types": [
+            {
+                "car_type": "dirt"
+            },
+            {
+                "car_type": "dirtroad"
+            },
+            {
+                "car_type": "irx"
+            },
+            {
+                "car_type": "rallycross"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "dirt_road"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 82,
+        "car_name": "Dirt Legends Ford '34 Coupe",
+        "car_types": [
+            {
+                "car_type": "dirt"
+            },
+            {
+                "car_type": "dirtoval"
+            },
+            {
+                "car_type": "legends"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "dirt_oval"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 83,
+        "car_name": "Dirt Late Model - Pro",
+        "car_types": [
+            {
+                "car_type": "dirt"
+            },
+            {
+                "car_type": "dirtoval"
+            },
+            {
+                "car_type": "dlm"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "dirt_oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 84,
+        "car_name": "Dirt Late Model - Super",
+        "car_types": [
+            {
+                "car_type": "dirt"
+            },
+            {
+                "car_type": "dirtoval"
+            },
+            {
+                "car_type": "dlm"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "dirt_oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 85,
+        "car_name": "Dirt Sprint Car - 360",
+        "car_types": [
+            {
+                "car_type": "dirt"
+            },
+            {
+                "car_type": "dirtoval"
+            },
+            {
+                "car_type": "wingedsprintcar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "dirt_oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 86,
+        "car_name": "Dirt Sprint Car - 410",
+        "car_types": [
+            {
+                "car_type": "dirt"
+            },
+            {
+                "car_type": "dirtoval"
+            },
+            {
+                "car_type": "wingedsprintcar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "dirt_oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 87,
+        "car_name": "Dirt Sprint Car - 360 Non-Winged",
+        "car_types": [
+            {
+                "car_type": "dirt"
+            },
+            {
+                "car_type": "dirtoval"
+            },
+            {
+                "car_type": "sprintcar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "dirt_oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 88,
+        "car_name": "[Legacy] Porsche 911 GT3 Cup (991)",
+        "car_types": [
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            },
+            {
+                "car_type": "supercup"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 2.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 89,
+        "car_name": "Dirt Sprint Car - 410 Non-Winged",
+        "car_types": [
+            {
+                "car_type": "dirt"
+            },
+            {
+                "car_type": "dirtoval"
+            },
+            {
+                "car_type": "sprintcar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "dirt_oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 91,
+        "car_name": "VW Beetle",
+        "car_types": [
+            {
+                "car_type": "dirt"
+            },
+            {
+                "car_type": "dirtroad"
+            },
+            {
+                "car_type": "irx"
+            },
+            {
+                "car_type": "rallycross"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "dirt_road"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 92,
+        "car_name": "Ford GTE",
+        "car_types": [
+            {
+                "car_type": "gte"
+            },
+            {
+                "car_type": "gtlm"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 93,
+        "car_name": "Ferrari 488 GTE",
+        "car_types": [
+            {
+                "car_type": "gte"
+            },
+            {
+                "car_type": "gtlm"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 94,
+        "car_name": "[Legacy] Ferrari 488 GT3",
+        "car_types": [
+            {
+                "car_type": "gt3"
+            },
+            {
+                "car_type": "gtd"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 2.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 95,
+        "car_name": "Dirt UMP Modified",
+        "car_types": [
+            {
+                "car_type": "dirt"
+            },
+            {
+                "car_type": "dirtoval"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "dirt_oval"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 96,
+        "car_name": "Dirt Midget",
+        "car_types": [
+            {
+                "car_type": "dirt"
+            },
+            {
+                "car_type": "dirtoval"
+            },
+            {
+                "car_type": "midget"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "dirt_oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 98,
+        "car_name": "Audi R18",
+        "car_types": [
+            {
+                "car_type": "lmp1"
+            },
+            {
+                "car_type": "prototype"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 99,
+        "car_name": "Dallara IR18",
+        "car_types": [
+            {
+                "car_type": "openwheel"
+            },
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "formula_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 100,
+        "car_name": "Porsche 919",
+        "car_types": [
+            {
+                "car_type": "lmp1"
+            },
+            {
+                "car_type": "prototype"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 101,
+        "car_name": "Subaru WRX STI",
+        "car_types": [
+            {
+                "car_type": "dirt"
+            },
+            {
+                "car_type": "dirtroad"
+            },
+            {
+                "car_type": "irx"
+            },
+            {
+                "car_type": "rallycross"
+            },
+            {
+                "car_type": "subi"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "dirt_road"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 102,
+        "car_name": "Porsche 911 RSR",
+        "car_types": [
+            {
+                "car_type": "gte"
+            },
+            {
+                "car_type": "gtlm"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 103,
+        "car_name": "NASCAR Cup Series Chevrolet Camaro ZL1",
+        "car_types": [
+            {
+                "car_type": "chevy"
+            },
+            {
+                "car_type": "classa"
+            },
+            {
+                "car_type": "cupcar"
+            },
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "oval"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 104,
+        "car_name": "Lucas Oil Off Road Pro 2 Truck",
+        "car_types": [
+            {
+                "car_type": "dirt"
+            },
+            {
+                "car_type": "dirtroad"
+            },
+            {
+                "car_type": "offroad"
+            },
+            {
+                "car_type": "offroadtruck"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "dirt_road"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 105,
+        "car_name": "Formula Renault 3.5",
+        "car_types": [
+            {
+                "car_type": "fr3.5"
+            },
+            {
+                "car_type": "openwheel"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "formula_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 106,
+        "car_name": "Dallara F3",
+        "car_types": [
+            {
+                "car_type": "formula3"
+            },
+            {
+                "car_type": "openwheel"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "formula_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 107,
+        "car_name": "Lucas Oil Off Road Pro 4 Truck",
+        "car_types": [
+            {
+                "car_type": "dirt"
+            },
+            {
+                "car_type": "dirtroad"
+            },
+            {
+                "car_type": "offroad"
+            },
+            {
+                "car_type": "offroadtruck"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "dirt_road"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 109,
+        "car_name": "BMW M8 GTE",
+        "car_types": [
+            {
+                "car_type": "gte"
+            },
+            {
+                "car_type": "gtlm"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 110,
+        "car_name": "NASCAR Cup Series Ford Mustang",
+        "car_types": [
+            {
+                "car_type": "classa"
+            },
+            {
+                "car_type": "cupcar"
+            },
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "oval"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 111,
+        "car_name": "NASCAR Truck Chevrolet Silverado",
+        "car_types": [
+            {
+                "car_type": "chevy"
+            },
+            {
+                "car_type": "craftsman"
+            },
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "truck"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 112,
+        "car_name": "Audi RS 3 LMS TCR",
+        "car_types": [
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            },
+            {
+                "car_type": "tcr"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 113,
+        "car_name": "Lucas Oil Off Road Pro 2 Lite",
+        "car_types": [
+            {
+                "car_type": "dirt"
+            },
+            {
+                "car_type": "dirtroad"
+            },
+            {
+                "car_type": "offroad"
+            },
+            {
+                "car_type": "offroadtruck"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "dirt_road"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 114,
+        "car_name": "NASCAR XFINITY Chevrolet Camaro",
+        "car_types": [
+            {
+                "car_type": "chevy"
+            },
+            {
+                "car_type": "classb"
+            },
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "nationwide"
+            },
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "xfinity"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 115,
+        "car_name": "NASCAR XFINITY Ford Mustang",
+        "car_types": [
+            {
+                "car_type": "classb"
+            },
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "nationwide"
+            },
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "xfinity"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 116,
+        "car_name": "NASCAR XFINITY Toyota Supra",
+        "car_types": [
+            {
+                "car_type": "classb"
+            },
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "nationwide"
+            },
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "xfinity"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 117,
+        "car_name": "[Legacy] Supercars Holden ZB Commodore",
+        "car_types": [
+            {
+                "car_type": "aussiev8"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            },
+            {
+                "car_type": "v8sc"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 2.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 118,
+        "car_name": "[Legacy] Supercars Ford Mustang GT",
+        "car_types": [
+            {
+                "car_type": "aussiev8"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            },
+            {
+                "car_type": "v8sc"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 2.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 119,
+        "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+        "car_types": [
+            {
+                "car_type": "gs"
+            },
+            {
+                "car_type": "gt4"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 120,
+        "car_name": "Indy Pro 2000 PM-18",
+        "car_types": [
+            {
+                "car_type": "openwheel"
+            },
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "formula_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 121,
+        "car_name": "USF 2000",
+        "car_types": [
+            {
+                "car_type": "f2000"
+            },
+            {
+                "car_type": "openwheel"
+            },
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "formula_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 122,
+        "car_name": "BMW M4 F82 GT4 - 2018",
+        "car_types": [
+            {
+                "car_type": "gs"
+            },
+            {
+                "car_type": "gt4"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 123,
+        "car_name": "NASCAR Truck Ford F150",
+        "car_types": [
+            {
+                "car_type": "craftsman"
+            },
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "truck"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 124,
+        "car_name": "NASCAR Legends Chevrolet Monte Carlo - 1987",
+        "car_types": [
+            {
+                "car_type": "chevy"
+            },
+            {
+                "car_type": "cupcar"
+            },
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "winstoncup"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 125,
+        "car_name": "NASCAR Legends Ford Thunderbird - 1987",
+        "car_types": [
+            {
+                "car_type": "cupcar"
+            },
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "winstoncup"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 127,
+        "car_name": "Chevrolet Corvette C8.R GTE",
+        "car_types": [
+            {
+                "car_type": "chevy"
+            },
+            {
+                "car_type": "gte"
+            },
+            {
+                "car_type": "gtlm"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 128,
+        "car_name": "Dallara P217",
+        "car_types": [
+            {
+                "car_type": "lmp2"
+            },
+            {
+                "car_type": "p2"
+            },
+            {
+                "car_type": "prototype"
+            },
+            {
+                "car_type": "prototype"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 129,
+        "car_name": "Dallara iR-01",
+        "car_types": [
+            {
+                "car_type": "openwheel"
+            },
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "formula_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 131,
+        "car_name": "Dirt Big Block Modified",
+        "car_types": [
+            {
+                "car_type": "dirt"
+            },
+            {
+                "car_type": "dirtoval"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "dirt_oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 132,
+        "car_name": "BMW M4 GT3",
+        "car_types": [
+            {
+                "car_type": "gt3"
+            },
+            {
+                "car_type": "gtd"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 133,
+        "car_name": "Lamborghini Hurac\u00e1n GT3 EVO",
+        "car_types": [
+            {
+                "car_type": "gt3"
+            },
+            {
+                "car_type": "gtd"
+            },
+            {
+                "car_type": "huracan"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 134,
+        "car_name": "Dirt 358 Modified",
+        "car_types": [
+            {
+                "car_type": "dirt"
+            },
+            {
+                "car_type": "dirtoval"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "dirt_oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 135,
+        "car_name": "McLaren 570S GT4",
+        "car_types": [
+            {
+                "car_type": "gs"
+            },
+            {
+                "car_type": "gt4"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 137,
+        "car_name": "[Legacy] Porsche 911 GT3 R",
+        "car_types": [
+            {
+                "car_type": "gt3"
+            },
+            {
+                "car_type": "gtd"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 2.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 138,
+        "car_name": "VW Beetle - Lite",
+        "car_types": [
+            {
+                "car_type": "dirt"
+            },
+            {
+                "car_type": "dirtroad"
+            },
+            {
+                "car_type": "irx"
+            },
+            {
+                "car_type": "rallycross"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "dirt_road"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 139,
+        "car_name": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1",
+        "car_types": [
+            {
+                "car_type": "chevy"
+            },
+            {
+                "car_type": "cupcar"
+            },
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "oval"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 140,
+        "car_name": "NASCAR Cup Series Next Gen Ford Mustang",
+        "car_types": [
+            {
+                "car_type": "cupcar"
+            },
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "oval"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 141,
+        "car_name": "NASCAR Cup Series Next Gen Toyota Camry",
+        "car_types": [
+            {
+                "car_type": "cupcar"
+            },
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "oval"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 142,
+        "car_name": "Formula Vee",
+        "car_types": [
+            {
+                "car_type": "formulavee"
+            },
+            {
+                "car_type": "openwheel"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "formula_car"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 143,
+        "car_name": "Porsche 911 GT3 Cup (992)",
+        "car_types": [
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 144,
+        "car_name": "Ferrari 488 GT3 Evo 2020",
+        "car_types": [
+            {
+                "car_type": "gt3"
+            },
+            {
+                "car_type": "gtd"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 145,
+        "car_name": "Mercedes-AMG W12 E Performance",
+        "car_types": [
+            {
+                "car_type": "amg"
+            },
+            {
+                "car_type": "f1"
+            },
+            {
+                "car_type": "formula"
+            },
+            {
+                "car_type": "formula1"
+            },
+            {
+                "car_type": "openwheel"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "w12"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "formula_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 146,
+        "car_name": "Hyundai Elantra N TCR",
+        "car_types": [
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            },
+            {
+                "car_type": "tcr"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 147,
+        "car_name": "Honda Civic Type R TCR",
+        "car_types": [
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            },
+            {
+                "car_type": "tcr"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 148,
+        "car_name": "FIA F4",
+        "car_types": [
+            {
+                "car_type": "openwheel"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "formula_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 149,
+        "car_name": "Radical SR10",
+        "car_types": [
+            {
+                "car_type": "prototype"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 150,
+        "car_name": "Aston Martin Vantage GT4",
+        "car_types": [
+            {
+                "car_type": "aienabled"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 151,
+        "car_name": "Stock Car Brasil Chevrolet Cruze",
+        "car_types": [
+            {
+                "car_type": "brasil"
+            },
+            {
+                "car_type": "brazil"
+            },
+            {
+                "car_type": "scb"
+            },
+            {
+                "car_type": "stockcar"
+            },
+            {
+                "car_type": "stockcarbrasil"
+            },
+            {
+                "car_type": "stockcarproseries"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 152,
+        "car_name": "Stock Car Brasil Toyota Corolla",
+        "car_types": [
+            {
+                "car_type": "brasil"
+            },
+            {
+                "car_type": "brazil"
+            },
+            {
+                "car_type": "scb"
+            },
+            {
+                "car_type": "stockcar"
+            },
+            {
+                "car_type": "stockcarbrasil"
+            },
+            {
+                "car_type": "stockcarproseries"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 153,
+        "car_name": "Hyundai Veloster N TCR",
+        "car_types": [
+            {
+                "car_type": "aienabled"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            },
+            {
+                "car_type": "tcr"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 154,
+        "car_name": "NASCAR Legends Buick LeSabre - 1987",
+        "car_types": [
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "oval"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 155,
+        "car_name": "NASCAR Truck Toyota Tundra TRD Pro",
+        "car_types": [
+            {
+                "car_type": "craftsman"
+            },
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "truck"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 156,
+        "car_name": "Mercedes-AMG GT3 2020",
+        "car_types": [
+            {
+                "car_type": "gt3"
+            },
+            {
+                "car_type": "gtd"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 157,
+        "car_name": "Mercedes-AMG GT4",
+        "car_types": [
+            {
+                "car_type": "gt4"
+            },
+            {
+                "car_type": "gtd"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 158,
+        "car_name": "Porsche Mission R",
+        "car_types": [
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 159,
+        "car_name": "BMW M Hybrid V8",
+        "car_types": [
+            {
+                "car_type": "gtp"
+            },
+            {
+                "car_type": "gtp"
+            },
+            {
+                "car_type": "lmdh"
+            },
+            {
+                "car_type": "prototype"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 160,
+        "car_name": "Toyota GR86",
+        "car_types": [
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "street circuit"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "sports_car"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 161,
+        "car_name": "Mercedes-AMG W13 E Performance",
+        "car_types": [
+            {
+                "car_type": "amg"
+            },
+            {
+                "car_type": "f1"
+            },
+            {
+                "car_type": "formula"
+            },
+            {
+                "car_type": "formula1"
+            },
+            {
+                "car_type": "openwheel"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "w12"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "formula_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 162,
+        "car_name": "Renault Clio",
+        "car_types": [
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 163,
+        "car_name": "Ray FF1600",
+        "car_types": [
+            {
+                "car_type": "ford"
+            },
+            {
+                "car_type": "formula"
+            },
+            {
+                "car_type": "openwheel"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "formula_car"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 164,
+        "car_name": "Late Model Stock",
+        "car_types": [
+            {
+                "car_type": "oval"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 165,
+        "car_name": "Ligier JS P320",
+        "car_types": [
+            {
+                "car_type": "lmp3"
+            },
+            {
+                "car_type": "prototype"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 167,
+        "car_name": "Gen 4 Cup",
+        "car_types": [
+            {
+                "car_type": "arca"
+            },
+            {
+                "car_type": "chevy"
+            },
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "oval"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 168,
+        "car_name": "Cadillac V-Series.R GTP",
+        "car_types": [
+            {
+                "car_type": "gtp"
+            },
+            {
+                "car_type": "lmdh"
+            },
+            {
+                "car_type": "prototype"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 169,
+        "car_name": "Porsche 911 GT3 R (992)",
+        "car_types": [
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 170,
+        "car_name": "Acura ARX-06 GTP",
+        "car_types": [
+            {
+                "car_type": "gtp"
+            },
+            {
+                "car_type": "lmdh"
+            },
+            {
+                "car_type": "prototype"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 171,
+        "car_name": "Super Formula SF23 - Toyota",
+        "car_types": [
+            {
+                "car_type": "openwheel"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sf"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "formula_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 172,
+        "car_name": "Super Formula SF23 - Honda",
+        "car_types": [
+            {
+                "car_type": "openwheel"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sf"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "formula_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 173,
+        "car_name": "Ferrari 296 GT3",
+        "car_types": [
+            {
+                "car_type": "gt3"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 174,
+        "car_name": "Porsche 963 GTP",
+        "car_types": [
+            {
+                "car_type": "gtp"
+            },
+            {
+                "car_type": "lmdh"
+            },
+            {
+                "car_type": "prototype"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 175,
+        "car_name": "NASCAR Legends Pontiac Grand Prix - 1987",
+        "car_types": [
+            {
+                "car_type": "nascar"
+            },
+            {
+                "car_type": "oval"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 176,
+        "car_name": "Audi R8 LMS EVO II GT3",
+        "car_types": [
+            {
+                "car_type": "audi"
+            },
+            {
+                "car_type": "gt"
+            },
+            {
+                "car_type": "gt3"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 178,
+        "car_name": "Super Formula Lights",
+        "car_types": [
+            {
+                "car_type": "openwheel"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sf"
+            },
+            {
+                "car_type": "sfl"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "formula_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 179,
+        "car_name": "SRX",
+        "car_types": [
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "srx"
+            },
+            {
+                "car_type": "superstar racing experience"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 180,
+        "car_name": "Dirt Micro Sprint Car - Winged",
+        "car_types": [
+            {
+                "car_type": "dirt"
+            },
+            {
+                "car_type": "dirtoval"
+            },
+            {
+                "car_type": "sprintcar"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "dirt_oval"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 181,
+        "car_name": "Dirt Micro Sprint Car - Non-Winged",
+        "car_types": [
+            {
+                "car_type": "dirt"
+            },
+            {
+                "car_type": "dirtoval"
+            },
+            {
+                "car_type": "sprintcar"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "dirt_oval"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 182,
+        "car_name": "Dirt Outlaw Micro Sprint Car - Winged",
+        "car_types": [
+            {
+                "car_type": "dirt"
+            },
+            {
+                "car_type": "dirtoval"
+            },
+            {
+                "car_type": "sprintcar"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "dirt_oval"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 183,
+        "car_name": "Dirt Outlaw Micro Sprint Car - Non-Winged",
+        "car_types": [
+            {
+                "car_type": "dirt"
+            },
+            {
+                "car_type": "dirtoval"
+            },
+            {
+                "car_type": "sprintcar"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "dirt_oval"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 184,
+        "car_name": "Chevrolet Corvette Z06 GT3.R",
+        "car_types": [
+            {
+                "car_type": "chevy"
+            },
+            {
+                "car_type": "gt3"
+            },
+            {
+                "car_type": "road"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 185,
+        "car_name": "Ford Mustang GT3",
+        "car_types": [
+            {
+                "car_type": "gt3"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 186,
+        "car_name": "Street Stock - Casino M2",
+        "car_types": [
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "ss"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 187,
+        "car_name": "Street Stock - Eagle T3",
+        "car_types": [
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "ss"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "oval"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 188,
+        "car_name": "McLaren 720S GT3 EVO",
+        "car_types": [
+            {
+                "car_type": "gt3"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 189,
+        "car_name": "BMW M4 G82 GT4",
+        "car_types": [
+            {
+                "car_type": "gt4"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sportscar"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 190,
+        "car_name": "Supercars Ford Mustang Gen 3",
+        "car_types": [
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "supercars"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 191,
+        "car_name": "Mini Stock",
+        "car_types": [
+            {
+                "car_type": "mini"
+            },
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "rookie"
+            },
+            {
+                "car_type": "stock"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "oval"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 192,
+        "car_name": "Supercars Chevrolet Camaro Gen 3",
+        "car_types": [
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "supercars"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 193,
+        "car_name": "Dirt Mini Stock",
+        "car_types": [
+            {
+                "car_type": "mini"
+            },
+            {
+                "car_type": "oval"
+            },
+            {
+                "car_type": "rookie"
+            },
+            {
+                "car_type": "stock"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "oval"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 194,
+        "car_name": "Acura NSX GT3 EVO 22",
+        "car_types": [
+            {
+                "car_type": "gt3"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sports"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    },
+    {
+        "car_id": 195,
+        "car_name": "BMW M2 CS Racing",
+        "car_types": [
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sports"
+            }
+        ],
+        "car_owned": true,
+        "car_price": 0,
+        "categories": [
+            "sports_car"
+        ],
+        "free": true
+    },
+    {
+        "car_id": 196,
+        "car_name": "Ferrari 499P",
+        "car_types": [
+            {
+                "car_type": "prototype"
+            },
+            {
+                "car_type": "road"
+            },
+            {
+                "car_type": "sports"
+            }
+        ],
+        "car_owned": false,
+        "car_price": 11.95,
+        "categories": [
+            "sports_car"
+        ],
+        "free": false
+    }
 ]

@@ -1,5 +1,7 @@
 import {useEffect, useState} from "react";
 import { load } from '@tauri-apps/plugin-store';
+import trackListFilter from "../../lib/TrackListFilter.ts";
+import VariantCounter from "../../lib/VariantCounter.ts";
 
 const TrackTable = () => {
 
@@ -7,6 +9,7 @@ const TrackTable = () => {
     const [trackData, setTrackData] = useState<any>([]);
     const [render, setRender] = useState(false)
     const [cart, setCart] = useState<any>([]);
+    const [fullTrackList, setFullTrackList] = useState<any>([])
 
     useEffect(() => {
             if(trackData.length > 20){
@@ -37,13 +40,16 @@ const TrackTable = () => {
                 console.log(tracks.default);
                 await store.set('tracks', tracks.default);
                 setTrackData(
-                    tracks.default.filter(item => !item.owned)
-                        .sort(function(a, b) {
-                            const textA = a.name.toUpperCase();
-                            const textB = b.name.toUpperCase();
-                            return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-                        })
+                    trackListFilter(
+                        tracks.default.filter(item => !item.track_owned)
+                            .sort(function(a, b) {
+                                const textA = a.track_name.toUpperCase();
+                                const textB = b.track_name.toUpperCase();
+                                return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+                            })
+                    )
                 );
+                setFullTrackList(tracks.default);
                 return;
             }
         }
@@ -52,23 +58,29 @@ const TrackTable = () => {
             console.log(tracks.default);
             await store.set('tracks', tracks.default);
             setTrackData(
-                tracks.default.filter(item => !item.owned)
-                    .sort(function(a, b) {
-                        const textA = a.name.toUpperCase();
-                        const textB = b.name.toUpperCase();
-                        return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-                    })
+                trackListFilter(
+                    tracks.default.filter(item => !item.track_owned)
+                        .sort(function(a, b) {
+                            const textA = a.track_name.toUpperCase();
+                            const textB = b.track_name.toUpperCase();
+                            return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+                        })
+                )
             );
+            setFullTrackList(tracks.default);
             return;
         }
         setTrackData(
-            tracks.filter((item: { owned: boolean; }) => !item.owned)
-                .sort(function(a: { name: string; }, b: { name: string; }) {
-                    const textA = a.name.toUpperCase();
-                    const textB = b.name.toUpperCase();
-                    return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-                })
-        )
+            trackListFilter(
+                tracks.filter((item: { track_owned: boolean; }) => !item.track_owned)
+                    .sort(function(a: { track_name: string; }, b: { track_name: string; }) {
+                        const textA = a.track_name.toUpperCase();
+                        const textB = b.track_name.toUpperCase();
+                        return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+                    })
+            )
+        );
+        setFullTrackList(tracks);
     }
 
     useEffect(() => {
@@ -87,7 +99,7 @@ const TrackTable = () => {
             // @ts-ignore
             for(let i = 0; i < cart.length; i++){
                 // @ts-ignore
-                if(cart[i].id == id){
+                if(cart[i].package_id == id){
                     return <p className="text-xl">In Cart</p>
                 }
             }
@@ -106,7 +118,7 @@ const TrackTable = () => {
             trackCart = []
         }
         // @ts-ignore
-        trackCart.push(trackData.filter(item => item.id === id)[0]);
+        trackCart.push(trackData.filter(item => item.package_id === id)[0]);
         setCart(trackCart);
         await store.set("trackCart", trackCart);
         setRender(true);
@@ -134,13 +146,13 @@ const TrackTable = () => {
                 <tbody>
                 {
                     trackData.map((track: any) => (
-                        <tr key={track.id}>
+                        <tr key={track.package_id}>
                             <td></td>
-                            <td>{track.name}</td>
-                            <td>{track.variants}</td>
-                            <td>{track.cost}$</td>
+                            <td>{track.track_name}</td>
+                            <td>{VariantCounter(fullTrackList, track.track_name)}</td>
+                            <td>{track.track_price}$</td>
                             <td>{track.owned ?
-                                <p className="text-xl accent-green-500">Owned</p> : checkInCart(track.id)}
+                                <p className="text-xl accent-green-500">Owned</p> : checkInCart(track.package_id)}
                             </td>
                         </tr>
                     ))
