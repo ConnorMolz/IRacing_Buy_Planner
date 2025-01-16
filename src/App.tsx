@@ -6,6 +6,7 @@ import Cart from "./pages/Cart.tsx";
 import MyContent from "./pages/My-Content.tsx";
 import Options from "./pages/Options.tsx";
 import Info from "./pages/Info.tsx";
+import SeasonPlanner from "./pages/Season-Planner.tsx";
 
 
 const App = ()=> {
@@ -39,6 +40,10 @@ const App = ()=> {
         {
             path:"/Info",
             element: <Info />
+        },
+        {
+            path:"/Schedule",
+            element:<SeasonPlanner />
         }
 
     ]);

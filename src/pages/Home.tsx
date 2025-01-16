@@ -1,9 +1,11 @@
 import {Link} from "react-router";
 import Navbar from "../components/Navbar.tsx";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import {load} from "@tauri-apps/plugin-store"
 
 const Home = () =>{
+
+    const [datasetUpdate, setDatasetUpdate] = useState<boolean>(false)
 
     useEffect(() => {
        checkStore().then();
@@ -11,6 +13,18 @@ const Home = () =>{
 
     const checkStore = async() => {
         const store = await load("store.json", {autoSave:true});
+
+        const newestDataVersion = 1
+        await store.set("current-version", newestDataVersion);
+
+        const current = await store.get('data-version')
+        if(current != 1){
+            await store.set('data-version', 1);
+        }
+
+        if(current != newestDataVersion){
+            setDatasetUpdate(true);
+        }
 
         // Cars
         const cars = await store.get<any>('cars');
@@ -38,6 +52,7 @@ const Home = () =>{
                 let tracks = await import('../data/tracks.json');
                 console.log(tracks.default);
                 await store.set('tracks', tracks.default);
+                await store.set('data-version', 1);
                 return;
             }
         }
@@ -45,6 +60,7 @@ const Home = () =>{
             let tracks = await import('../data/tracks.json');
             console.log(tracks.default);
             await store.set('tracks', tracks.default);
+            await store.set('data-version', 1);
             return;
         }
 
@@ -58,11 +74,40 @@ const Home = () =>{
         if(!trackCart){
             await store.set("trackCart", []);
         }
+
+        // Schedule
+        const schedule = await store.get<any[]>("season");
+        try {
+            // @ts-ignore
+            if (schedule.length < 10) {
+                let schedule = await import('../data/season.json');
+                console.log(schedule.default);
+                await store.set('season', schedule.default);
+                return;
+            }
+        }
+        catch (e) {
+            let schedule = await import('../data/season.json');
+            console.log(schedule.default);
+            await store.set('season', schedule.default);
+            return;
+        }
+
     }
 
     return(
         <div>
             <Navbar/>
+            {datasetUpdate &&
+                <div role="alert" className="alert alert-info">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                         className="h-6 w-6 shrink-0 stroke-current">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span><Link to={"/Options"}>A new dataset update available.</Link></span>
+                </div>
+            }
             <div className="py-2.5"></div>
             <div className="justify-center flex py-2.5">
                 <Link to={"/cars"} className="btn btn-primary h-20 w-4/5">
@@ -93,6 +138,18 @@ const Home = () =>{
                          className="bi bi-cart" viewBox="0 0 16 16">
                         <path
                             d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg>
+                </Link>
+            </div>
+            <div className="justify-center flex py-2.5">
+                <Link to={"/Schedule"} className="btn btn-primary h-20 w-4/5">
+                    Schedule
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         className="bi bi-calendar-week" viewBox="0 0 16 16">
+                        <path
+                            d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
+                        <path
+                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
                     </svg>
                 </Link>
             </div>
