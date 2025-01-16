@@ -24,10 +24,13 @@ const Schedule = (plan:plan) => {
                                 <div className="collapse-content text-sm">
                                     {series.schedule.map((week:any) =>(
                                         <div key={week.week}>
-                                            <div>{distanceFormatter(week.race_lap_limit, week.race_time_limit)}</div>
-                                            <div>{week.start_type}</div>
-                                            <div>{week.track.track_name}</div>
-                                            <div className="divider" />
+                                            <div className="font-bold">Week: {week.week}</div>
+                                            <div>Race Distance: {distanceFormatter(week.race_lap_limit, week.race_time_limit)}</div>
+                                            <div>Start type: {week.start_type} Start</div>
+                                            <div>Track: {week.track.track_name}</div>
+                                            { week.week != 12 &&
+                                                <div className="divider" />
+                                            }
                                         </div>
                                         ))
                                     }
