@@ -4,7 +4,7 @@ interface plan {
 }
 
 const Schedule = (plan:plan) => {
-
+    console.log(plan)
     const distanceFormatter = (laps:any, min:any) => {
         if(laps != null){
             return laps + " Laps"
@@ -17,7 +17,7 @@ const Schedule = (plan:plan) => {
             <ul className="list bg-base-100 rounded-box shadow-md">
                 {
                     plan.plan.map((series) =>(
-                        <li className="list-row" key={series.series_id}>
+
                             <div tabIndex={0}
                                  className="collapse collapse-plus border-base-300 bg-base-100 border border-base-300 border">
                                 <div className="collapse-title font-semibold">{series.series_name}</div>
@@ -26,13 +26,14 @@ const Schedule = (plan:plan) => {
                                         <div key={week.week}>
                                             <div>{distanceFormatter(week.race_lap_limit, week.race_time_limit)}</div>
                                             <div>{week.start_type}</div>
-                                            <div>{week.track}</div>
+                                            <div>{week.track.track_name}</div>
+                                            <div className="divider" />
                                         </div>
                                         ))
                                     }
                                 </div>
                             </div>
-                        </li>
+
                     ))
                 }
             </ul>

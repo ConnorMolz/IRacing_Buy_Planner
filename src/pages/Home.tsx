@@ -74,6 +74,25 @@ const Home = () =>{
         if(!trackCart){
             await store.set("trackCart", []);
         }
+
+        // Schedule
+        const schedule = await store.get<any[]>("season");
+        try {
+            // @ts-ignore
+            if (schedule.length < 10) {
+                let schedule = await import('../data/season.json');
+                console.log(schedule.default);
+                await store.set('season', schedule.default);
+                return;
+            }
+        }
+        catch (e) {
+            let schedule = await import('../data/season.json');
+            console.log(schedule.default);
+            await store.set('season', schedule.default);
+            return;
+        }
+
     }
 
     return(

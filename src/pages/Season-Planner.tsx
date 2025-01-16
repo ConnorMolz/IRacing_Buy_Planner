@@ -13,6 +13,7 @@ const SeasonPlanner = () => {
 
     const getSeasonPlan = async () => {
         const store = await load("store.json", {autoSave: true});
+
         const content = await store.get("season");
         const trackList = await store.get("tracks");
         setTracks(trackList);
