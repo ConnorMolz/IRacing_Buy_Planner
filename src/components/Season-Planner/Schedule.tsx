@@ -19,7 +19,7 @@ const Schedule = (plan:plan) => {
                     plan.plan.map((series) =>(
 
                             <div tabIndex={0}
-                                 className="collapse collapse-plus border-base-300 bg-base-100 border border-base-300 border">
+                                 className="collapse collapse-plus border-base-300 bg-base-100 border">
                                 <div className="collapse-title font-semibold">{series.series_name}</div>
                                 <div className="collapse-content text-sm">
                                     {series.schedule.map((week:any) =>(
