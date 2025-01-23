@@ -71,7 +71,7 @@ const CarTable = () => {
             return;
         }
        setCarData(
-           cars.filter((item: { owned: any; }) => !item.owned)
+           cars.filter((item: { car_owned: any; }) => !item.car_owned)
                .sort(function(a: { car_name: string; }, b: { car_name: string; }) {
                    const textA = a.car_name.toUpperCase();
                    const textB = b.car_name.toUpperCase();
@@ -134,7 +134,7 @@ const CarTable = () => {
                         <td></td>
                         <td>{car.car_name}</td>
                         <td>{car.car_price}$</td>
-                        <td>{car.owned ?
+                        <td>{car.car_owned ?
                             <p className="text-xl accent-green-500">Owned</p> : checkInCart(car.car_id)}</td>
                     </tr>
                 ))

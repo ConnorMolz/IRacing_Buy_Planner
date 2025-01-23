@@ -151,7 +151,7 @@ const TrackTable = () => {
                             <td>{track.track_name}</td>
                             <td>{VariantCounter(fullTrackList, track.track_name)}</td>
                             <td>{track.track_price}$</td>
-                            <td>{track.owned ?
+                            <td>{track.track_owned ?
                                 <p className="text-xl accent-green-500">Owned</p> : checkInCart(track.package_id)}
                             </td>
                         </tr>
