@@ -4,7 +4,6 @@ interface plan {
 }
 
 const Schedule = (plan:plan) => {
-    console.log(plan)
     const distanceFormatter = (laps:any, min:any) => {
         if(laps != null){
             return laps + " Laps"

@@ -28,29 +28,24 @@ const Home = () =>{
 
         // Cars
         const cars = await store.get<any>('cars');
-        console.log(cars)
         try {
             if (cars.length < 20) {
                 const cars = await import('../data/cars.json');
-                console.log(cars.default);
                 await store.set('cars', cars.default);
                 return;
             }
         }
         catch (e){
             const cars = await import('../data/cars.json');
-            console.log(cars.default);
             await store.set('cars', cars.default);
             return;
         }
 
         //Tracks
         const tracks = await store.get<any>('tracks');
-        console.log(tracks)
         try {
             if (tracks.length < 10) {
                 let tracks = await import('../data/tracks.json');
-                console.log(tracks.default);
                 await store.set('tracks', tracks.default);
                 await store.set('data-version', 1);
                 return;
@@ -58,7 +53,6 @@ const Home = () =>{
         }
         catch (e) {
             let tracks = await import('../data/tracks.json');
-            console.log(tracks.default);
             await store.set('tracks', tracks.default);
             await store.set('data-version', 1);
             return;
@@ -81,14 +75,12 @@ const Home = () =>{
             // @ts-ignore
             if (schedule.length < 10) {
                 let schedule = await import('../data/season.json');
-                console.log(schedule.default);
                 await store.set('season', schedule.default);
                 return;
             }
         }
         catch (e) {
             let schedule = await import('../data/season.json');
-            console.log(schedule.default);
             await store.set('season', schedule.default);
             return;
         }

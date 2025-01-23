@@ -3,7 +3,6 @@ interface cars {
 }
 
 const MyCars = (cars: cars) => {
-    console.log(cars.carList);
     if (cars.carList.length == 0) {
         return (
             <div></div>
