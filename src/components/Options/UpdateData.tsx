@@ -15,7 +15,6 @@ const UpdateData = () => {
         const store = await load("store.json", {autoSave: true});
         const current = await store.get<number>("data-version");
         const newest = await store.get<number>("current-version");
-        console.log(current);
         // @ts-ignore
         setCurrentVersion(current);
         // @ts-ignore

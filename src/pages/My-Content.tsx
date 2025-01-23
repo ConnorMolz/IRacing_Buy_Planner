@@ -31,7 +31,6 @@ const MyContent = () =>{
         const store = await load('store.json', { autoSave: true });
 
         let cars = await store.get<any>('cars');
-        console.log(cars)
         const freeCars = cars.filter((item: { car_owned: boolean; free:boolean}) => item.car_owned && item.free)
             .sort(function(a: { car_name: string; }, b: { car_name: string; }) {
                 const textA = a.car_name.toUpperCase();
@@ -53,7 +52,6 @@ const MyContent = () =>{
         const store = await load('store.json', { autoSave: true });
 
         let tracks = await store.get<any>('tracks');
-        console.log(tracks)
         const freeTracks = tracks.filter((item: {track_owned: boolean; free:boolean }) => item.track_owned && item.free)
             .sort(function(a: { track_name: string; }, b: { track_name: string; }) {
                 const textA = a.track_name.toUpperCase();

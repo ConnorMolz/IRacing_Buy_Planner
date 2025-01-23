@@ -33,11 +33,9 @@ const TrackTable = () => {
         const store = await load('store.json', { autoSave: true });
 
         const tracks = await store.get<any>('tracks');
-        console.log(tracks)
         try {
             if (tracks.length < 10) {
                 let tracks = await import('../../data/tracks.json');
-                console.log(tracks.default);
                 await store.set('tracks', tracks.default);
                 setTrackData(
                     trackListFilter(
@@ -55,7 +53,6 @@ const TrackTable = () => {
         }
         catch (e) {
             let tracks = await import('../../data/tracks.json');
-            console.log(tracks.default);
             await store.set('tracks', tracks.default);
             setTrackData(
                 trackListFilter(
@@ -111,7 +108,6 @@ const TrackTable = () => {
     }
 
     const addToCart = async (id:any) => {
-        console.log(id);
         const store = await load('store.json', { autoSave: true });
         let trackCart = await store.get("trackCart");
         if(!trackCart){

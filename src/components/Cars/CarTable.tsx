@@ -39,11 +39,9 @@ const CarTable = () => {
         const store = await load('store.json', { autoSave: true });
 
         const cars = await store.get<any>('cars');
-        console.log(cars)
         try {
             if (cars.length < 20) {
                 const cars = await import('../../data/cars.json');
-                console.log(cars.default);
                 await store.set('cars', cars.default);
                 setCarData(
                     cars.default.filter(item => !item.car_owned)
@@ -58,7 +56,6 @@ const CarTable = () => {
         }
         catch (e){
             const cars = await import('../../data/cars.json');
-            console.log(cars.default);
             await store.set('cars', cars.default);
             setCarData(
                 cars.default.filter(item => !item.car_owned)
