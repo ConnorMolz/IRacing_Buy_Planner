@@ -92,10 +92,10 @@ const TrackCart = () =>{
                         <tbody>
                         {
                             cart.map((track: any) => (
-                                <tr key={track.id}>
+                                <tr key={track.track_id}>
                                     <td>
                                         <button className="btn btn-error"
-                                                onClick={() => removeFromCart(track.track_id)}>
+                                                onClick={() => removeFromCart(track.package_id)}>
                                             Remove
                                         </button>
                                     </td>
