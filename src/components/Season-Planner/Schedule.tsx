@@ -3,7 +3,8 @@ import {useEffect, useState} from "react";
 
 interface plan {
     plan: any[],
-    tracks: any[]
+    tracks: any[],
+    trackCart: any[]
 }
 
 const Schedule = (plan:plan) => {
@@ -37,9 +38,29 @@ const Schedule = (plan:plan) => {
             trackCart = []
         }
         // @ts-ignore
-        trackCart.push(trackData.filter(item => item.package_id === track_id)[0]);
+        trackCart.push(plan.tracks.filter(item => item.package_id === track_id)[0]);
         await store.set("trackCart", trackCart);
         setRender(true);
+    }
+
+    const checkInCart = (id:any) => {
+        const track_id = plan.tracks.filter(item => item.track_id == id)[0].package_id;
+        try{
+            // @ts-ignore
+            for(let i = 0; i < plan.trackCart.length; i++){
+                // @ts-ignore
+                if(plan.trackCart[i].package_id == track_id){
+                    return <p className="text-xl">In Cart</p>
+                }
+            }
+        }
+        catch (e){
+            console.error(e);
+        }
+        //@ts-ignore
+        return <button onClick={() => addToCart(week.track.track_id)} className="btn-primary btn">
+            Add to Cart
+        </button>;
     }
 
     return(
@@ -48,8 +69,8 @@ const Schedule = (plan:plan) => {
                 {
                     plan.plan.map((series) =>(
 
-                        <div tabIndex={0}
-                             className="collapse collapse-plus border-base-300 bg-base-100 border">
+                        <div className="collapse collapse-plus border-base-300 bg-base-100 border">
+                            <input type="checkbox" />
                             <div className="collapse-title font-semibold">{series.series_name}</div>
                             <div className="collapse-content text-sm">
                                 {series.schedule.map((week:any) =>(
@@ -61,14 +82,10 @@ const Schedule = (plan:plan) => {
                                         {
                                             !getOwned(week.track.track_id)&&
                                             <div className="flex justify-end">
-                                                <button onClick={() => addToCart(week.track.track_id)} className="btn-primary btn">
-                                                    Add to Cart
-                                                </button>
+                                                {week.track.track_owned ?
+                                                    <p className="text-xl accent-green-500">Owned</p> : checkInCart(week.track.track_id)
+                                                }
                                             </div>
-                                        }
-                                        {
-                                            getOwned(week.track.track_id)&&
-                                            <div className="flex justify-end">Owned</div>
                                         }
                                         { week.week != 12 &&
                                             <div className="divider" />
