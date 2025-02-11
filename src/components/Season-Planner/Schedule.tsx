@@ -10,6 +10,7 @@ interface plan {
 const Schedule = (plan:plan) => {
 
     const[render, setRender] = useState(false);
+    const[trackCart, setTrackCart] = useState(plan.trackCart);
 
     useEffect(() =>{
         setRender(false);
@@ -33,13 +34,21 @@ const Schedule = (plan:plan) => {
     const addToCart = async (id:any) => {
         const track_id = plan.tracks.filter(item => item.track_id == id)[0].package_id;
         const store = await load('store.json', { autoSave: true });
-        let trackCart = await store.get("trackCart");
         if(!trackCart){
-            trackCart = []
+            // @ts-ignore
+            let trackCartF = [];
+            console.log(plan.tracks.filter(item => item.package_id === track_id)[0]);
+            trackCartF.push(plan.tracks.filter(item => item.package_id === track_id)[0]);
+            await store.set("trackCart", trackCartF);
         }
+        console.log(plan.tracks.filter(item => item.package_id === track_id)[0]);
         // @ts-ignore
-        trackCart.push(plan.tracks.filter(item => item.package_id === track_id)[0]);
-        await store.set("trackCart", trackCart);
+        let trackCartF = trackCart;
+        trackCartF.push(plan.tracks.filter(item => item.package_id === track_id)[0]);
+        console.log(trackCartF);
+        console.log(plan.tracks);
+        await store.set("trackCart", trackCartF);
+        setTrackCart(trackCartF);
         setRender(true);
     }
 
@@ -58,7 +67,7 @@ const Schedule = (plan:plan) => {
             console.error(e);
         }
         //@ts-ignore
-        return <button onClick={() => addToCart(week.track.track_id)} className="btn-primary btn">
+        return <button onClick={() => addToCart(id)} className="btn-primary btn">
             Add to Cart
         </button>;
     }
@@ -80,9 +89,8 @@ const Schedule = (plan:plan) => {
                                         <div>Start type: {week.start_type} Start</div>
                                         <div>Track: {week.track.track_name}</div>
                                         {
-                                            !getOwned(week.track.track_id)&&
                                             <div className="flex justify-end">
-                                                {week.track.track_owned ?
+                                                {getOwned(week.track.track_id) ?
                                                     <p className="text-xl accent-green-500">Owned</p> : checkInCart(week.track.track_id)
                                                 }
                                             </div>
