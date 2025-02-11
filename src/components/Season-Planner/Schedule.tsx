@@ -8,13 +8,8 @@ interface plan {
 }
 
 const Schedule = (plan:plan) => {
-
-    const[render, setRender] = useState(false);
     const[trackCart, setTrackCart] = useState(plan.trackCart);
-
-    useEffect(() =>{
-        setRender(false);
-    },[render]);
+    const[updateTrigger, setUpdateTrigger] = useState(0);
 
     const distanceFormatter = (laps:any, min:any) => {
         if(laps != null){
@@ -34,42 +29,30 @@ const Schedule = (plan:plan) => {
     const addToCart = async (id:any) => {
         const track_id = plan.tracks.filter(item => item.track_id == id)[0].package_id;
         const store = await load('store.json', { autoSave: true });
-        if(!trackCart){
-            // @ts-ignore
-            let trackCartF = [];
-            console.log(plan.tracks.filter(item => item.package_id === track_id)[0]);
-            trackCartF.push(plan.tracks.filter(item => item.package_id === track_id)[0]);
-            await store.set("trackCart", trackCartF);
-        }
-        console.log(plan.tracks.filter(item => item.package_id === track_id)[0]);
-        // @ts-ignore
-        let trackCartF = trackCart;
-        trackCartF.push(plan.tracks.filter(item => item.package_id === track_id)[0]);
-        console.log(trackCartF);
-        console.log(plan.tracks);
+        let trackCartF = trackCart || [];
+        
+        const newTrack = plan.tracks.filter(item => item.package_id === track_id)[0];
+        trackCartF = [...trackCartF, newTrack];
+        
         await store.set("trackCart", trackCartF);
         setTrackCart(trackCartF);
-        setRender(true);
+        setUpdateTrigger(prev => prev + 1); // Force re-render
     }
 
     const checkInCart = (id:any) => {
         const track_id = plan.tracks.filter(item => item.track_id == id)[0].package_id;
-        try{
-            // @ts-ignore
-            for(let i = 0; i < plan.trackCart.length; i++){
-                // @ts-ignore
-                if(plan.trackCart[i].package_id == track_id){
-                    return <p className="text-xl">In Cart</p>
-                }
+        try {
+            if (trackCart?.some(item => item.package_id === track_id)) {
+                return <p className="text-xl">In Cart</p>;
             }
-        }
-        catch (e){
+        } catch (e) {
             console.error(e);
         }
-        //@ts-ignore
-        return <button onClick={() => addToCart(id)} className="btn-primary btn">
-            Add to Cart
-        </button>;
+        return (
+            <button onClick={() => addToCart(id)} className="btn-primary btn">
+                Add to Cart
+            </button>
+        );
     }
 
     return(
