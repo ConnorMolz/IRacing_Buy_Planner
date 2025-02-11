@@ -11,6 +11,9 @@ const Schedule = (plan:plan) => {
     const[trackCart, setTrackCart] = useState(plan.trackCart);
     const[updateTrigger, setUpdateTrigger] = useState(0);
 
+    useEffect(() => {
+    },[updateTrigger]);
+
     const distanceFormatter = (laps:any, min:any) => {
         if(laps != null){
             return laps + " Laps"
