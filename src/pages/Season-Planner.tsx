@@ -6,7 +6,8 @@ import Schedule from "../components/Season-Planner/Schedule.tsx";
 const SeasonPlanner = () => {
     const [plan, setPlan] = useState<any>([]);
     const [tracks, setTracks] = useState<any>([]);
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(true);
+    const [trackCart, setTrackCart] = useState<any>([]);
     useEffect(() => {
         getSeasonPlan().then(() => setLoading(false));
     }, []);
@@ -16,8 +17,10 @@ const SeasonPlanner = () => {
 
         const content = await store.get("season");
         const trackList = await store.get("tracks");
+        const trackCartFunc = await store.get("trackCart");
         setTracks(trackList);
         setPlan(content);
+        setTrackCart(trackCartFunc);
     }
 
     if(loading){
@@ -29,7 +32,7 @@ const SeasonPlanner = () => {
     return (
         <div>
             <Navbar />
-            <Schedule plan={plan} tracks={tracks} />
+            <Schedule plan={plan} tracks={tracks} trackCart={trackCart} />
         </div>
     )
 

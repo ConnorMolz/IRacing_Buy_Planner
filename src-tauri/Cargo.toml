@@ -1,6 +1,6 @@
 [package]
 name = "IRacing_Buy_Planner"
-version = "0.4.2"
+version = "0.4.3"
 description = "A Tauri App"
 authors = ["Connor Molz"]
 edition = "2021"
